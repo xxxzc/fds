@@ -10,19 +10,23 @@
     </div>
   </section>
 
-  <div class="card">
+  <div class="container card">
+    <div class="card-content">
     <vue-simple-markdown :source="syl"></vue-simple-markdown>
+    </div>
   </div>
 </div>
 </template>
 
 <script>
-
 export default {
   name: 'syllabus',
   data: () => ({
-    syl: "#Hello"
-  })
+    syl: "# Hello"
+  }),
+  created: () => {
+    // this.$http.get('${baseUrl}')
+  }
 }
 </script>
 
@@ -32,7 +36,7 @@ export default {
 }
 
 .card {
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 </style>
