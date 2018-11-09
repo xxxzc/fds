@@ -4,6 +4,8 @@ import Home from './views/Home.vue'
 import Lecture from './views/Lecture.vue'
 import People from './views/People.vue'
 import Syllabus from './views/Syllabus.vue'
+import Resources from './views/Resources.vue'
+import Assignment from './views/Assignment.vue'
 
 Vue.use(Router)
 
@@ -15,13 +17,8 @@ export default new Router({
       component: Home
     },
     {
-      path: '/about',
-      name: 'about',
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    },
-    {
-      path: '/lecture',
-      name: 'lecture',
+      path: '/lectures',
+      name: 'lectures',
       component: Lecture
     },
     {
@@ -33,6 +30,16 @@ export default new Router({
       path: '/syllabus',
       name: 'syllabus',
       component: Syllabus
+    },
+    {
+      path: '/resources',
+      name: 'resources',
+      component: Resources      
+    },
+    {
+      path: '/assignments',
+      name: 'assignments',
+      component: Assignment    
     }
   ]
 })

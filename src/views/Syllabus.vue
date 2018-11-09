@@ -11,8 +11,8 @@
   </section>
 
   <div class="container card">
-    <div class="card-content">
-    <vue-simple-markdown :source="syl"></vue-simple-markdown>
+    <div class="card-content content" ref="markdownContent">
+    {{syl}}
     </div>
   </div>
 </div>
@@ -24,8 +24,14 @@ export default {
   data: () => ({
     syl: "# Hello"
   }),
-  created: () => {
-    // this.$http.get('${baseUrl}')
+  created: function () {
+    // get syllabus markdown file
+    this.$http.get('https://raw.githubusercontent.com/xxxzc/fds/master/public/README.md').then(res => {
+      let MarkDownIt = require('markdown-it');
+      let md = new MarkDownIt();
+      this.syl = md.render(res.data);
+      this.$refs.markdownContent.innerHTML = this.syl
+    });
   }
 }
 </script>

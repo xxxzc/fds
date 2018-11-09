@@ -33,8 +33,8 @@ export default {
     isMenuActive: false,
     routerLinks: [
       { name: '大纲', to: '/syllabus' },
-      { name: '课件', to: '/lecture' }, 
-      { name: '作业', to: '/assignment'},
+      { name: '课件', to: '/lectures' }, 
+      { name: '作业', to: '/assignments'},
       { name: '人员', to: '/people'},
       { name: '资源', to: '/resources'}]
   })
