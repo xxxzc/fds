@@ -1,30 +1,37 @@
 <template>
-  <div id="app">
-    <nav class="navbar is-fixed-top" role="navigation">
-      <div class="container">
-      <div class="navbar-brand">
-        <!-- <p class="navbar-item">
-          <img src="./assets/nju.jpg" width="112" height="28">
-        </p> -->
-        <router-link id="brand-name" class="navbar-item" to="/">数据科学基础课程</router-link>
-        <span
-          class="navbar-burger burger"
-          :class="{ 'is-active': isMenuActive }"
-          @click="isMenuActive = !isMenuActive">
-          <span/>
-          <span/>
-          <span/>
-        </span>
+<div id="app">
+  <nav class="navbar is-fixed-top" role="navigation">
+    <div class="container">
+    <div class="navbar-brand">
+      <!-- <p class="navbar-item">
+        <img src="./assets/nju.jpg" width="112" height="28">
+      </p> -->
+      <router-link id="brand-name" class="navbar-item" to="/">数据科学基础课程</router-link>
+      <a class="navbar-item" href="https://github.com/xxxzc/fds" target="_blank">
+        <b-icon icon="github-circle" size="is-medium" type="is-dark"></b-icon>
+      </a>
+      <span
+        class="navbar-burger burger"
+        :class="{ 'is-active': isMenuActive }"
+        @click="isMenuActive = !isMenuActive">
+        <span/>
+        <span/>
+        <span/>
+      </span>
+    </div>
+    <div class="navbar-menu" :class="{ 'is-active': isMenuActive }">
+      <div class="navbar-end">
+        <router-link class="navbar-item" v-for="router in routerLinks" :key="router.name" :to="router.to" :class="{ 'is-active': router.to == $route.path }">{{router.name}}</router-link>
       </div>
-      <div class="navbar-menu" :class="{ 'is-active': isMenuActive }">
-        <div class="navbar-end">
-          <router-link class="navbar-item" v-for="router in routerLinks" :key="router.name" :to="router.to" :class="{ 'is-active': router.to == $route.path }">{{router.name}}</router-link>
-        </div>
-      </div>
-      </div>
-    </nav>
-    <router-view/>
-  </div>
+    </div>
+    </div>
+  </nav>
+  <router-view/>
+  <footer class="footer">
+    <div class="content has-text-centered">
+    </div>
+  </footer>
+</div>
 </template>
 
 <script>
@@ -63,6 +70,10 @@ $primary: #6A005F;
     color: $primary;
     border-bottom: 3px solid $primary;
   }
+}
+
+.icon-text {
+  vertical-align: middle
 }
 
 </style>
