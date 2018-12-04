@@ -10,8 +10,10 @@
   "dependencies": {
     "axios": "^0.18.0",
     "buefy": "^0.7.0",
+    "echarts": "^4.2.0-rc.2",
     "markdown-it": "^8.4.2",
     "vue": "^2.5.17",
+    "vue-echarts-v3": "^1.0.19",
     "vue-router": "^3.0.1",
     "vue-simple-markdown": "^1.0.8"
   },
