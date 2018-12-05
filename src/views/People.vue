@@ -14,7 +14,7 @@
         <div class="media">
         <div class="media-left">
             <figure class="image is-48x48">
-            <img class="is-rounded" src="../assets/avatar/ZhenyuChen_disp.jpg" alt="Placeholder image">
+            <img class="is-rounded" src="http://www.iselab.cn/static/imgs/photos/faculty/ZhenyuChen_disp.jpg" alt="Placeholder image">
             </figure>
         </div>
         <div class="media-content">
