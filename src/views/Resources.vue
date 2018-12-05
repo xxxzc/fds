@@ -37,7 +37,7 @@
 
 <script>
 import IEcharts from 'vue-echarts-v3/src/lite.js';
-import 'echarts/lib/chart/map';
+import 'echarts/lib/chart/tree';
 import 'echarts/lib/component/tooltip';
 import 'echarts/lib/component/title';
 import 'echarts/lib/component/toolbox';
