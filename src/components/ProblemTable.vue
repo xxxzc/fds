@@ -6,10 +6,10 @@
           {{props.row[0]}}
         </b-table-column>
         <b-table-column field="description" label="简单描述" width="280">
-          {{props.row[5]}}
+          {{props.row[2]}}
         </b-table-column>
         <b-table-column field="difficulty" label="难度">
-          {{props.row[4]}}
+          {{props.row[1]}}
         </b-table-column>
         <b-table-column field="key" label="知识点">
           <b-taglist>
