@@ -11,6 +11,7 @@
   </section>
 
   <div class="container card">
+    <b-loading :is-full-page="false" :active.sync="isLoading" :can-cancel="true"></b-loading>
     <div class="card-content content" ref="markdownContent">
     {{syl}}
     </div>
@@ -22,15 +23,18 @@
 export default {
   name: 'syllabus',
   data: () => ({
-    syl: "# Hello"
+    syl: '',
+    isLoading: true
   }),
-  created: function () {
+  mounted: function () {
+    this.isLoading = true;
     // get syllabus markdown file
     this.$http.get('https://raw.githubusercontent.com/xxxzc/fds/master/public/README.md').then(res => {
       let MarkDownIt = require('markdown-it');
       let md = new MarkDownIt();
       this.syl = md.render(res.data);
-      this.$refs.markdownContent.innerHTML = this.syl
+      this.$refs.markdownContent.innerHTML = this.syl;
+      this.isLoading = false;
     });
   }
 }
@@ -43,6 +47,7 @@ export default {
 
 .card {
   margin-top: 20px;
+  min-height: 100px;
 }
 
 </style>

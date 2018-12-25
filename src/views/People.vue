@@ -9,7 +9,11 @@
       </div>
     </div>
   </section>
-  <div class="container card">
+  <div class="container">
+  <h1 style="margin-top: 20px; font-size: 20px; font-weight: bold;">
+  TEACHERs
+  </h1>
+  <div class="card">
     <div class="card-content">
         <div class="media">
         <div class="media-left">
@@ -23,6 +27,25 @@
         </div>
         </div>
     </div>
+  </div>
+  <h1 style="margin-top: 20px; font-size: 20px; font-weight: bold;">
+  TAs
+  </h1>
+  <div class="card">
+    <div class="card-content">
+        <div class="media">
+        <div class="media-left">
+            <figure class="image is-48x48">
+            <img class="is-rounded" src="http://www.iselab.cn/static/imgs/photos/faculty/ZhenyuChen_disp.jpg" alt="Placeholder image">
+            </figure>
+        </div>
+        <div class="media-content">
+            <p class="title is-4">Zhenyu Chen</p>
+            <p class="subtitle is-6">zychen@nju.edu.cn</p>
+        </div>
+        </div>
+    </div>
+  </div>
   </div>
 </div>
 </template>

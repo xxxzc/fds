@@ -1,6 +1,6 @@
 <template>
   <section>
-    <b-table v-show="problems" :data="problems">
+    <b-table :data="filteredProblems">
       <template slot-scope="props">
         <b-table-column field="name" label="题目名">
           {{props.row[0]}}
@@ -32,11 +32,31 @@
 <script>
 export default {
   name: "ProblemTable",
-  props: ['problems'],
+  props: {
+    tag: {
+      type: String,
+      default: '输入输出'
+    }
+  },
   data: () => ({
-
+    problemSet: [],
   }),
+  created: function() {
+    this.refreshData();
+  },
+  computed: {
+    filteredProblems: function() {
+      if (this.tag === '') return [];
+      return this.problemSet.filter(problem => problem[3].indexOf(this.tag) != -1);
+    }
+  },
   methods: {
+    refreshData() {
+      let repo = "https://raw.githubusercontent.com/xxxzc/njufds-remote-files/master";
+      this.$http.get(repo + '/csv/ProblemInfo.csv').then(res => {
+        this.problemSet = res.data.split('\n').slice(1).map(row => row.split(','));
+      });
+    },
     randomizeColor(item, items) {
       let color = ['info', 'warning', 'success', 'danger'];
       return 'is-' + color[items.indexOf(item)%4];
