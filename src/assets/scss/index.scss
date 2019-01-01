@@ -28,6 +28,13 @@ $link-focus-border: $primary;
 
 $footer-background-color: white;
 
+$navbar-breakpoint: $tablet;
+$navbar-background-color: transparent;
+$navbar-item-color: white;
+$navbar-item-hover-background-color: transparent;
+$navbar-item-hover-color: white;
+$navbar-item-active-color: white;
+
 // Import Bulma and Buefy styles
 @import "~bulma";
 @import "~buefy/src/scss/buefy";

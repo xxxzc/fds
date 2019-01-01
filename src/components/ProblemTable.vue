@@ -1,6 +1,6 @@
 <template>
   <section>
-    <b-table :data="filteredProblems">
+    <b-table :data="filteredProblems" hoverable>
       <template slot-scope="props">
         <b-table-column field="name" label="题目名">
           {{props.row[0]}}
@@ -20,7 +20,7 @@
           </b-taglist>
         </b-table-column>
         <b-table-column field="link" label="去做题">
-          <a>
+          <a href="http://code.mooctest.net/#/exercise" target="_blank">
             <b-icon icon="open-in-new"></b-icon>
           </a>
         </b-table-column>

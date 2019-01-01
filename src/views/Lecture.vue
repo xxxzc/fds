@@ -12,7 +12,7 @@
 
   <!-- Lecture Table -->
   <div id="lecture-table" class="container card">
-    <b-table :data="lectureData">
+    <b-table :data="lectureData" striped>
       <template slot-scope="props">
         <b-table-column field="date" label="Date">
           {{props.row.date}}
@@ -21,7 +21,9 @@
           {{props.row.topic}}
         </b-table-column>
         <b-table-column field="slide" label="Slide">
-          {{props.row.slide}}
+          <a :href="props.row.slide" target="_blank">
+            <b-icon icon="file-powerpoint-box" type="is-dark"></b-icon>
+          </a>
         </b-table-column>
       </template>
     </b-table>

@@ -10,6 +10,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "buefy": "^0.7.0",
+    "kity": "^2.0.4",
     "kityminder-core": "^1.4.50",
     "markdown-it": "^8.4.2",
     "vue": "^2.5.17",

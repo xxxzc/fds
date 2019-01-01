@@ -15,10 +15,11 @@ export default {
   created: function() {
   },
   mounted: function() {
+    // eslint-disable-next-line
     this.km = new kityminder.Minder({
-      renderTo: '#minder-container'
+        renderTo: '#minder-container'
     });
-    this.km.on('selectionchange', this.onSelectionChange)
+    this.km.on('selectionchange', this.onSelectionChange);
     this.refreshData();
   },
   methods: {
@@ -26,18 +27,16 @@ export default {
       let repo = "https://raw.githubusercontent.com/xxxzc/njufds-remote-files/master";
       this.$http.get(repo + '/json/Python_learning_tree.json').then(res => {
         this.learningtree = res.data;
-        this.collapseAll(this.learningtree.root);
-        this.learningtree.root.data.expandState = 'expand';
-        this.learningtree.root.children[0].data.expandState = 'expand';
-        this.learningtree.root.children[0].children[0].data.expandState = 'expand';
+        this.expandFirstThreeLevel(this.learningtree.root, 0);
+        // this.learningtree.root.children[0].children[0].data.expandState = 'expand';
         this.km.importJson(this.learningtree);
       });
     },
-    collapseAll(o) {
+    expandFirstThreeLevel(o, depth) {
       if (o) {
-        o.data.expandState = 'collapse';
+        o.data.expandState = depth < 2 ? 'expand' : 'collapse';
         for (let c of o.children) {
-          this.collapseAll(c);
+          this.expandFirstThreeLevel(c, depth+1);
         }
       }
     },
@@ -64,6 +63,6 @@ export default {
 
 <style scoped>
 #minder-container {
-  height: 500px;
+  height: 600px;
 }
 </style>

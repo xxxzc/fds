@@ -1,6 +1,6 @@
 <template>
 <div id="Resources">
-  <!-- <section class="hero is-primary">
+  <section class="hero is-primary">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
@@ -8,8 +8,8 @@
         </h1>
       </div>
     </div>
-  </section> -->
-  <b-collapse class="container card">
+  </section>
+  <b-collapse class="container card" v-bind:open.sync="isOpen">
     <div slot="trigger" slot-scope="props" class="card-header">
       <p class="card-header-title">Python 学习路线图</p>
       <a class="card-header-icon">
@@ -36,12 +36,16 @@ export default {
     ProblemTable, LearningTree
   },
   data: () => ({
+    isOpen: true,
     selectedTag: '输入输出'
   }),
   methods: {
     onTagChanged(tag) {
       this.selectedTag = tag;
     }
+  },
+  created: function() {
+    this.isOpen = screen.width >= 768;
   }
 }
 </script>
@@ -52,7 +56,7 @@ export default {
 }
 
 .card {
-  margin-top: 10px
+  margin-top: 20px
 }
 
 .card-header {
