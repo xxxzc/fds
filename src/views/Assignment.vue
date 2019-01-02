@@ -1,7 +1,7 @@
 <template>
-<div id="Resources">
+<div>
   <slot name="header"></slot>
-  <div class="container card">
+  <div id="assignment-table" class="container card">
     <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
     <b-table :data="assignmentData" hoverable>
       <template slot-scope="props">
@@ -40,8 +40,9 @@ export default {
 </script>
 
 <style scoped>
-.card {
-  margin-top: 20px
+#assignment-table {
+  margin-top: 20px;
+  min-height: 100px;
 }
 </style>
 
