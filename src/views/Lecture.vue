@@ -1,15 +1,6 @@
 <template>
 <div id="Lectures">
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Lectures
-        </h1>
-      </div>
-    </div>
-  </section>
-
+  <slot name="header"></slot>
   <!-- Lecture Table -->
   <div id="lecture-table" class="container card">
     <b-table :data="lectureData" striped>
@@ -46,10 +37,6 @@ export default {
 </script>
 
 <style scoped>
-.hero {
-  text-align: center
-}
-
 #lecture-table {
   margin-top: 20px
 }

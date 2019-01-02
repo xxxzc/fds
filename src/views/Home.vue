@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="home">
   <section class="hero is-primary">
     <div class="hero-body">
       <div class="container">
@@ -13,40 +13,31 @@
     </div>
   </section>
   <div class="container">
-<div class="tile is-ancestor">
-  <div class="tile is-vertical">
-    <div class="tile">
-      <div class="tile is-parent is-vertical">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
         <article class="tile is-child notification">
-          <p class="title">Vertical...</p>
-          <p class="subtitle">Top tile</p>
+          <p class="title">课程简介</p>
+          <p class="subtitle"></p>
+          <div class="content">
+            <!-- Content -->
+          </div>
         </article>
+      </div>
+    </div>
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
         <article class="tile is-child notification">
-          <p class="title">...tiles</p>
-          <p class="subtitle">Bottom tile</p>
+          <p class="title">通知</p>
+          <p class="subtitle"></p>
         </article>
       </div>
       <div class="tile is-parent">
         <article class="tile is-child notification">
-          <p class="title">Middle tile</p>
-          <p class="subtitle">With an image</p>
-          <figure class="image is-4by3">
-            <img src="https://bulma.io/images/placeholders/640x480.png">
-          </figure>
+          <p class="title">资源</p>
+          <p class="subtitle"></p>
         </article>
       </div>
     </div>
-    <div class="tile is-parent">
-      <article class="tile is-child notification">
-        <p class="title">Wide tile</p>
-        <p class="subtitle">Aligned with the right tile</p>
-        <div class="content">
-          <!-- Content -->
-        </div>
-      </article>
-    </div>
-  </div>
-</div>
   </div>
 </div>
 </template>
@@ -60,6 +51,10 @@ export default {
 </script>
 
 <style scoped>
+.hero {
+  padding-top: 40px;
+}
+
 .container {
   margin-top: 20px
 }

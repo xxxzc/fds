@@ -28,7 +28,7 @@ export default {
       this.$http.get(repo + '/json/Python_learning_tree.json').then(res => {
         this.learningtree = res.data;
         this.expandFirstThreeLevel(this.learningtree.root, 0);
-        // this.learningtree.root.children[0].children[0].data.expandState = 'expand';
+        this.learningtree.root.children[0].children[0].data.expandState = 'expand';
         this.km.importJson(this.learningtree);
       });
     },

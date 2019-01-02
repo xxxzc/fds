@@ -1,14 +1,6 @@
 <template>
 <div id="Resources">
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Resources
-        </h1>
-      </div>
-    </div>
-  </section>
+  <slot name="header"></slot>
   <b-collapse class="container card" v-bind:open.sync="isOpen">
     <div slot="trigger" slot-scope="props" class="card-header">
       <p class="card-header-title">Python 学习路线图</p>
@@ -18,7 +10,7 @@
           </b-icon>
       </a>
     </div>
-    <learning-tree @select-tag="onTagChanged"/>
+    <learning-tree v-if="isOpen" @select-tag="onTagChanged"/>
 
     <div class="card-content">
     <problem-table :tag="selectedTag"></problem-table>
@@ -45,16 +37,12 @@ export default {
     }
   },
   created: function() {
-    this.isOpen = screen.width >= 768;
+    this.isOpen = document.documentElement.clientWidth >= 768;
   }
 }
 </script>
 
 <style scoped>
-.hero {
-  text-align: center
-}
-
 .card {
   margin-top: 20px
 }

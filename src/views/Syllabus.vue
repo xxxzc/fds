@@ -1,15 +1,6 @@
 <template>
 <div>
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          Syllabus
-        </h1>
-      </div>
-    </div>
-  </section>
-
+  <slot name="header"></slot>
   <div class="container card">
     <b-loading :is-full-page="false" :active.sync="isLoading" :can-cancel="true"></b-loading>
     <div class="card-content content" ref="markdownContent">
@@ -41,10 +32,6 @@ export default {
 </script>
 
 <style scoped>
-.hero {
-  text-align: center
-}
-
 .card {
   margin-top: 20px;
   min-height: 100px;

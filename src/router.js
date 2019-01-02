@@ -13,32 +13,32 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'Home',
       component: Home
     },
     {
       path: '/lectures',
-      name: 'lectures',
+      name: 'Lectures',
       component: Lecture
     },
     {
       path: '/people',
-      name: 'people',
+      name: 'People',
       component: People
     },
     {
       path: '/syllabus',
-      name: 'syllabus',
+      name: 'Syllabus',
       component: Syllabus
     },
     {
       path: '/resources',
-      name: 'resources',
+      name: 'Resources',
       component: Resources      
     },
     {
       path: '/assignments',
-      name: 'assignments',
+      name: 'Assignments',
       component: Assignment    
     }
   ]

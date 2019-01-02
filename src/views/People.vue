@@ -1,14 +1,6 @@
 <template>
 <div>
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title center-title">
-          People
-        </h1>
-      </div>
-    </div>
-  </section>
+  <slot name="header"></slot>
   <div class="container">
   <h1 class="center-title title" style="margin-top: 20px; font-size: 24px;">
   Instructor
@@ -83,7 +75,7 @@ export default {
 
 <style scoped>
 .center-title {
-  text-align: center
+  text-align: center;
 }
 
 .card {

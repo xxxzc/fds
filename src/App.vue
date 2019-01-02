@@ -19,7 +19,7 @@
         <span/>
       </span>
     </div>
-    <div class="navbar-menu" @click="isMenuActive = false" :class="{ 'is-active': isMenuActive }">
+    <div class="navbar-menu" @click="handleMenuClick" :class="{ 'is-active': isMenuActive }">
       <div class="navbar-end">
         <router-link class="navbar-item" v-for="router in routerLinks" 
           :key="router.name" :to="router.to" 
@@ -31,10 +31,19 @@
     </div>
   </nav>
   <div class="is-overlay">
-  <div style="height: 72px; background-color: #6A005F"></div>
-  <keep-alive>
-  <router-view/>
-  </keep-alive>
+    <keep-alive>
+      <router-view>
+        <section class="router-view-header hero is-primary" :class="{'is-mobile': isMobile}" slot="header">
+          <div class="hero-body">
+            <div class="container">
+              <h1 class="title">
+                {{headerTitle}}
+              </h1>
+            </div>
+          </div>
+        </section>
+      </router-view>
+    </keep-alive>
   </div>
   <footer class="footer">
     <div class="content has-text-centered">
@@ -48,6 +57,8 @@ export default {
   data: () => ({
     isMenuActive: false,
     isExpand: true,
+    isMobile: false,
+    headerTitle: '',
     routerLinks: [
       { name: '大纲', to: '/syllabus' },
       { name: '课件', to: '/lectures' }, 
@@ -57,11 +68,21 @@ export default {
   }),
   methods: {
     handleScroll () {
-      this.isExpand = screen.width >= 768 && window.scrollY < 60;
+      this.isExpand = !this.isMobile && window.scrollY < 60;
+    },
+    handleMenuClick () {
+      this.isMenuActive = false;
     }
   },
+  watch: {
+    $route: function() {
+      this.headerTitle = this.$route.name;
+    }  
+  },
   created () {
-    this.isExpand = screen.width >= 768;
+    this.isMobile = document.documentElement.clientWidth <= 768;
+    this.isExpand = !this.isMobile;
+    this.headerTitle = this.$route.name;
     window.addEventListener('scroll', this.handleScroll, true);
   }
 }
@@ -90,6 +111,12 @@ $primary: #6A005F;
   }
 }
 
+.hero {
+  &.is-mobile {
+    padding-top: 40px;
+  }
+}
+
 .icon-text {
   vertical-align: middle
 }
@@ -97,7 +124,7 @@ $primary: #6A005F;
 .navbar {
   padding: 0px 10px 0px 10px;
   transition-delay: 0.5s;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 
   &.is-expanded {
     padding-top: 20px;
@@ -106,8 +133,12 @@ $primary: #6A005F;
   }
 
   &.is-collapse {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(50, 50, 50, 0.5);
   }
+}
+
+.router-view-header {
+  text-align: center;
 }
 
 </style>
