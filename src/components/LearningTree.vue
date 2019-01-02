@@ -24,8 +24,7 @@ export default {
   },
   methods: {
     refreshData() {
-      let repo = "https://raw.githubusercontent.com/xxxzc/njufds-remote-files/master";
-      this.$http.get(repo + '/json/Python_learning_tree.json').then(res => {
+      this.$http.get(this.repo + '/km/Python_learning_tree.km').then(res => {
         this.learningtree = res.data;
         this.expandFirstThreeLevel(this.learningtree.root, 0);
         this.learningtree.root.children[0].children[0].data.expandState = 'expand';

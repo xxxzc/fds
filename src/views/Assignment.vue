@@ -2,11 +2,12 @@
 <div id="Resources">
   <slot name="header"></slot>
   <div class="container card">
+    <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
     <b-table :data="assignmentData" hoverable>
       <template slot-scope="props">
-        <b-table-column field="topic" label="Homework">
-          <a :href="props.row.slide" target="_blank">
-            {{props.row.topic}}
+        <b-table-column field="title" label="Homework">
+          <a :href="props.row.link" target="_blank">
+            {{props.row.title}}
           </a>
         </b-table-column>
         <b-table-column field="description" label="Description" width="600">
@@ -25,13 +26,16 @@
 export default {
   name: 'assignments',
   data: () => ({
-    assignmentData: [
-      { 'date': '11/11', 'topic': 'Introduction', 'slide': 'a', 'description': '第一次作业' },
-      { 'date': '11/18', 'topic': 'Data Exploration', 'slide': 'b', 'description': '第二次作业' },
-      { 'date': '11/25', 'topic': 'Statistical Learning', 'slide': 'c', 'description': '第三次作业' },
-      { 'date': '12/2', 'topic': 'Machine Learning', 'slide': 'd', 'description': '第四次作业' }
-    ]
-  })
+    isLoading: true,
+    assignmentData: []
+  }),
+  created: function() {
+    this.isLoading = true;
+    this.$http.get(this.repo + '/json/assignments.json').then(res => {
+      this.assignmentData = res.data;
+      this.isLoading = false;
+    });
+  }
 }
 </script>
 

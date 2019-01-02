@@ -52,8 +52,7 @@ export default {
   },
   methods: {
     refreshData() {
-      let repo = "https://raw.githubusercontent.com/xxxzc/njufds-remote-files/master";
-      this.$http.get(repo + '/csv/ProblemInfo.csv').then(res => {
+      this.$http.get(this.repo + '/csv/ProblemInfo.csv').then(res => {
         this.problemSet = res.data.split('\n').slice(1).map(row => row.split(','));
       });
     },

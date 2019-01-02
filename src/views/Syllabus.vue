@@ -2,7 +2,7 @@
 <div>
   <slot name="header"></slot>
   <div class="container card">
-    <b-loading :is-full-page="false" :active.sync="isLoading" :can-cancel="true"></b-loading>
+    <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
     <div class="card-content content" ref="markdownContent">
     {{syl}}
     </div>

@@ -3,6 +3,7 @@
   <slot name="header"></slot>
   <!-- Lecture Table -->
   <div id="lecture-table" class="container card">
+    <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
     <b-table :data="lectureData" striped>
       <template slot-scope="props">
         <b-table-column field="date" label="Date">
@@ -26,13 +27,16 @@
 export default {
   name: 'lecture',
   data: () => ({
-    lectureData: [
-      { 'date': '11/11', 'topic': 'Introduction', 'slide': 'a' },
-      { 'date': '11/18', 'topic': 'Data Exploration', 'slide': 'b' },
-      { 'date': '11/25', 'topic': 'Statistical Learning', 'slide': 'c' },
-      { 'date': '12/2', 'topic': 'Machine Learning', 'slide': 'd' }
-    ]
-  })
+    isLoading: true,
+    lectureData: []
+  }),
+  created: function() {
+    this.isLoading = true;
+    this.$http.get(this.repo + '/json/lectures.json').then(res => {
+      this.lectureData = res.data;
+      this.isLoading = false;
+    });
+  }
 }
 </script>
 
