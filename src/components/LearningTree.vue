@@ -54,7 +54,9 @@ export default {
     onSelectionChange() {
       let nodes = this.km.getSelectedNodes();
       if (nodes.length === 0) return;
-      this.$emit('select-tag', this.getNodeTag(nodes[0]));
+      let tag = this.getNodeTag(nodes[0]);
+      if (tag === '' && nodes[0].getParent()) return;
+      this.$emit('select-tag', tag);
     }
   }
 }
@@ -62,6 +64,6 @@ export default {
 
 <style scoped>
 #minder-container {
-  height: 600px;
+  height: 500px;
 }
 </style>

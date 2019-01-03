@@ -1,6 +1,7 @@
 <template>
 <div id="Resources">
   <slot name="header"></slot>
+
   <b-collapse class="container card" v-bind:open.sync="isOpen">
     <div slot="trigger" slot-scope="props" class="card-header">
       <p class="card-header-title">Python 学习路线图</p>
@@ -11,9 +12,22 @@
       </a>
     </div>
     <learning-tree v-if="isOpen" @select-tag="onTagChanged"/>
-
     <div class="card-content">
     <problem-table :tag="selectedTag"></problem-table>
+    </div>
+  </b-collapse>
+
+  <b-collapse class="container card">
+    <div slot="trigger" slot-scope="props" class="card-header">
+      <p class="card-header-title">相关课程资源列表</p>
+      <a class="card-header-icon">
+          <b-icon
+              :icon="props.open ? 'menu-down' : 'menu-up'">
+          </b-icon>
+      </a>
+    </div>
+    <div class="card-content">
+    <course-resource/>
     </div>
   </b-collapse>
 </div>
@@ -22,10 +36,11 @@
 <script>
 import LearningTree from '@/components/LearningTree'
 import ProblemTable from '@/components/ProblemTable'
+import CourseResource from '@/components/CourseResource'
 export default {
   name: 'resources',
   components: {
-    ProblemTable, LearningTree
+    ProblemTable, LearningTree, CourseResource
   },
   data: () => ({
     isOpen: true,
