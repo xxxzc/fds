@@ -41,10 +41,10 @@ export default {
     },
     getNodeTag(node) {
       if (node) {
-        let tags = [node.getData().text];
+        let tags = [node.getData().text.split(' ')[0]];
         while (node.getParent()) {
           node = node.getParent();
-          tags.push(node.getData('text'));
+          tags.push(node.getData('text').split(' ')[0]);
         }
         if (tags.length < 3) return '';
         let tag = tags.reverse().slice(2).join('-');
