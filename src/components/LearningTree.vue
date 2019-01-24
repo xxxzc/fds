@@ -1,5 +1,5 @@
 <template>
-  <div id="minder-container"></div>
+  <div id="minder-container" ref="minder"></div>
 </template>
 
 <script>
@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     refreshData() {
-      this.$http.get(this.repo + '/km/Python_learning_tree.km').then(res => {
+      this.$http.get(this.repo + '/json/python_learning_tree.json').then(res => {
         this.learningtree = res.data;
         this.expandFirstThreeLevel(this.learningtree.root, 0);
         this.learningtree.root.children[0].children[0].data.expandState = 'expand';
@@ -64,6 +64,6 @@ export default {
 
 <style scoped>
 #minder-container {
-  height: 500px;
+  height: 800px;
 }
 </style>

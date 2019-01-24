@@ -1,6 +1,8 @@
 <template>
 <div id="Lectures">
   <slot name="header"></slot>
+
+
   <div id="lecture-table" class="container card">
     <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
     <b-table :data="lectureData" striped>
@@ -43,6 +45,7 @@ export default {
 #lecture-table {
   margin-top: 20px;
   min-height: 100px;
+  max-width: 1000px;
 }
 </style>
 

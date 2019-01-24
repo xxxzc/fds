@@ -37,7 +37,8 @@
           <div class="hero-body">
             <div class="container">
               <h1 class="title">
-                {{headerTitle}}
+                <!-- {{headerTitle}} -->
+                <b-icon :icon="headerIcon"  custom-size="mdi-48px" type="is-light"></b-icon>
               </h1>
             </div>
           </div>
@@ -59,6 +60,7 @@ export default {
     isExpand: true,
     isMobile: false,
     headerTitle: '',
+    headerIcon: '',
     routerLinks: [
       { name: '大纲', to: '/syllabus' },
       { name: '课件', to: '/lectures' }, 
@@ -77,12 +79,14 @@ export default {
   watch: {
     $route: function() {
       this.headerTitle = this.$route.name;
+      this.headerIcon = this.$route.meta.icon;
     }  
   },
   created () {
     this.isMobile = document.documentElement.clientWidth <= 768;
     this.isExpand = !this.isMobile;
     this.headerTitle = this.$route.name;
+    this.headerIcon = this.$route.meta.icon;
     window.addEventListener('scroll', this.handleScroll, true);
   }
 }

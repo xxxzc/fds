@@ -43,6 +43,7 @@ export default {
 #assignment-table {
   margin-top: 20px;
   min-height: 100px;
+  max-width: 1000px;
 }
 </style>
 

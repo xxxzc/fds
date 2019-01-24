@@ -14,32 +14,50 @@ export default new Router({
     {
       path: '/',
       name: 'Home',
-      component: Home
+      component: Home,
+      meta: {
+        icon: 'home'
+      }
     },
     {
       path: '/lectures',
       name: 'Lectures',
-      component: Lecture
+      component: Lecture,
+      meta: {
+        icon: 'calendar-text'
+      }
     },
     {
       path: '/people',
       name: 'People',
-      component: People
+      component: People,
+      meta: {
+        icon: 'account-group'
+      }
     },
     {
       path: '/syllabus',
       name: 'Syllabus',
-      component: Syllabus
+      component: Syllabus,
+      meta: {
+        icon: 'book-open-variant'
+      }
     },
     {
       path: '/resources',
       name: 'Resources',
-      component: Resources      
+      component: Resources,
+      meta: {
+        icon: 'view-list'
+      }     
     },
     {
       path: '/assignments',
       name: 'Assignments',
-      component: Assignment    
+      component: Assignment,
+      meta: {
+        icon: 'calendar-check'
+      }
     }
   ]
 })
