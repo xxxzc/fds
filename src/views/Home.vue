@@ -16,7 +16,6 @@
 <div style="position:absolute;left:50%;margin-left:-480px;top:250px;width:960px;height:540px;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
 <img src="bg/background2.jpg" width=960 height=540></div>
-// eslint-disable-next-line
 <div style="position:absolute;left:50px;top:47.45px" class="cls_010"><span class="cls_010">| Science (</span><span class="cls_011">科学</span><span class="cls_010">)</span></div>
 <div style="position:absolute;left:49.06px;top:160.22px" class="cls_012"><span class="cls_012">The  intellectual  and  practical  activity</span></div>
 <div style="position:absolute;left:49.06px;top:190.44px" class="cls_013"><span class="cls_013">encompassing the systematic study of the</span></div>

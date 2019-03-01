@@ -31,7 +31,7 @@ export default {
   }),
   created: function() {
     this.isLoading = true;
-    this.$http.get(this.repo + '/infos/assignments.json').then(res => {
+    this.$http.get(this.repo + 'infos/assignments.json').then(res => {
       this.assignmentData = res.data;
       this.isLoading = false;
     });

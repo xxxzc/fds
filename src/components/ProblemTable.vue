@@ -72,7 +72,7 @@ export default {
   },
   methods: {
     refreshData() {
-      this.$http.get(this.repo + '/infos/ProblemInfo.csv').then(res => {
+      this.$http.get(this.repo + 'infos/ProblemInfo.csv').then(res => {
         this.problemSet = res.data.split('\n').slice(1).map(row => row.split(','));
       });
     },
