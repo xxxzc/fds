@@ -16,8 +16,8 @@
           </p>
         </b-table-column>
         <b-table-column field="slide" label="课件" centered>
-          <a v-for="slide in props.row.slides" :key="slide" :href="slide" target="_blank">
-            {{slide.slice(10)}}
+          <a v-for="slide in props.row.slides" :key="slide" :href="repo+slide" target="_blank">
+            {{slide.slice(9)}}
           </a>
         </b-table-column>
       </template>

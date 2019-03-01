@@ -6,7 +6,7 @@
     <b-table :data="assignmentData" hoverable>
       <template slot-scope="props">
         <b-table-column field="title" label="作业" width="200">
-          <a :href="props.row.link" target="_blank">
+          <a :href="repo + props.row.link" target="_blank">
             {{props.row.title}}
           </a>
         </b-table-column>
