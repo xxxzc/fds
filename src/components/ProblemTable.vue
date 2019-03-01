@@ -2,7 +2,6 @@
   <section>
     <b-field grouped>
       <b-input v-model="filter" placeholder="搜索关键词" style="width: 300px"></b-input>
-
     </b-field>
     <b-table :data="filteredProblems" 
         hoverable :paginated="true" :per-page="10"
@@ -28,9 +27,10 @@
           </b-field>
         </b-table-column>
         <b-table-column field="link" label="去做题">
-          <a href="http://code.mooctest.net/#/exercise" target="_blank">
+          <a v-if="props.row[7] === 'null'" :href="props.row[7]" target="_blank">
             <b-icon icon="open-in-new"></b-icon>
           </a>
+          <p v-else>暂无</p>
         </b-table-column>
       </template>
     </b-table>
@@ -72,7 +72,7 @@ export default {
   },
   methods: {
     refreshData() {
-      this.$http.get(this.repo + '/csv/ProblemInfo.csv').then(res => {
+      this.$http.get(this.repo + '/infos/ProblemInfo.csv').then(res => {
         this.problemSet = res.data.split('\n').slice(1).map(row => row.split(','));
       });
     },

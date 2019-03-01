@@ -2,8 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Lecture from './views/Lecture.vue'
-import People from './views/People.vue'
-import Syllabus from './views/Syllabus.vue'
+import Info from './views/Info.vue'
 import Resources from './views/Resources.vue'
 import Assignment from './views/Assignment.vue'
 
@@ -28,19 +27,11 @@ export default new Router({
       }
     },
     {
-      path: '/people',
-      name: 'People',
-      component: People,
+      path: '/info',
+      name: 'info',
+      component: Info,
       meta: {
-        icon: 'account-group'
-      }
-    },
-    {
-      path: '/syllabus',
-      name: 'Syllabus',
-      component: Syllabus,
-      meta: {
-        icon: 'book-open-variant'
+        icon: 'bulletin-board'
       }
     },
     {
@@ -56,7 +47,7 @@ export default new Router({
       name: 'Assignments',
       component: Assignment,
       meta: {
-        icon: 'calendar-check'
+        icon: 'calendar-question'
       }
     }
   ]

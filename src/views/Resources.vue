@@ -1,7 +1,19 @@
 <template>
 <div id="Resources">
   <slot name="header"></slot>
-
+  <b-collapse class="container card">
+    <div slot="trigger" slot-scope="props" class="card-header">
+      <p class="card-header-title">相关课程资源</p>
+      <a class="card-header-icon">
+          <b-icon
+              :icon="props.open ? 'menu-down' : 'menu-up'">
+          </b-icon>
+      </a>
+    </div>
+    <div class="card-content">
+    <course-resource/>
+    </div>
+  </b-collapse>
   <b-collapse class="container card" v-bind:open.sync="isOpen">
     <div slot="trigger" slot-scope="props" class="card-header">
       <p class="card-header-title">Python 学习路线图</p>
@@ -14,20 +26,6 @@
     <learning-tree v-if="isOpen" @select-tag="onTagChanged"/>
     <div class="card-content">
     <problem-table :tag="selectedTag"></problem-table>
-    </div>
-  </b-collapse>
-
-  <b-collapse class="container card">
-    <div slot="trigger" slot-scope="props" class="card-header">
-      <p class="card-header-title">相关课程资源列表</p>
-      <a class="card-header-icon">
-          <b-icon
-              :icon="props.open ? 'menu-down' : 'menu-up'">
-          </b-icon>
-      </a>
-    </div>
-    <div class="card-content">
-    <course-resource/>
     </div>
   </b-collapse>
 </div>
@@ -43,7 +41,7 @@ export default {
     ProblemTable, LearningTree, CourseResource
   },
   data: () => ({
-    isOpen: true,
+    isOpen: false,
     selectedTag: '输入输出'
   }),
   methods: {
@@ -59,7 +57,7 @@ export default {
 
 <style scoped>
 .card {
-  margin-top: 20px
+  margin-top: 40px
 }
 
 .card-header {

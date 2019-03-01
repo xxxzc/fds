@@ -5,15 +5,15 @@
     <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
     <b-table :data="assignmentData" hoverable>
       <template slot-scope="props">
-        <b-table-column field="title" label="Homework">
+        <b-table-column field="title" label="作业" width="200">
           <a :href="props.row.link" target="_blank">
             {{props.row.title}}
           </a>
         </b-table-column>
-        <b-table-column field="description" label="Description" width="600">
+        <b-table-column field="description" label="描述">
           {{props.row.description}}
         </b-table-column>
-        <b-table-column field="date" label="Due Date">
+        <b-table-column field="date" label="截止日期" width="160">
           {{props.row.date}}
         </b-table-column>
       </template>
@@ -31,7 +31,7 @@ export default {
   }),
   created: function() {
     this.isLoading = true;
-    this.$http.get(this.repo + '/json/assignments.json').then(res => {
+    this.$http.get(this.repo + '/infos/assignments.json').then(res => {
       this.assignmentData = res.data;
       this.isLoading = false;
     });
@@ -41,7 +41,7 @@ export default {
 
 <style scoped>
 #assignment-table {
-  margin-top: 20px;
+  margin-top: 40px;
   min-height: 100px;
   max-width: 1000px;
 }

@@ -1,21 +1,23 @@
 <template>
 <div id="Lectures">
   <slot name="header"></slot>
-
-
   <div id="lecture-table" class="container card">
     <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
-    <b-table :data="lectureData" striped>
+    <b-table :data="lectureData" striped hoverable>
       <template slot-scope="props">
-        <b-table-column field="date" label="Date">
+        <b-table-column field="date" label="时间" centered>
+          <p v-if="props.row.date !== '---'">
           {{props.row.date}}
+          </p>
         </b-table-column>
-        <b-table-column field="topic" label="Topic">
+        <b-table-column field="topic" label="主题" centered>
+          <p :class="{'is-bold': props.row.date === '---'}">
           {{props.row.topic}}
+          </p>
         </b-table-column>
-        <b-table-column field="slide" label="Slide">
-          <a :href="props.row.slide" target="_blank">
-            <b-icon icon="file-powerpoint-box" type="is-dark"></b-icon>
+        <b-table-column field="slide" label="课件" centered>
+          <a v-for="slide in props.row.slides" :key="slide" :href="slide" target="_blank">
+            {{slide.slice(10)}}
           </a>
         </b-table-column>
       </template>
@@ -33,7 +35,7 @@ export default {
   }),
   created: function() {
     this.isLoading = true;
-    this.$http.get(this.repo + '/json/lectures.json').then(res => {
+    this.$http.get(this.repo + '/infos/lectures.json').then(res => {
       this.lectureData = res.data;
       this.isLoading = false;
     });
@@ -43,9 +45,13 @@ export default {
 
 <style scoped>
 #lecture-table {
-  margin-top: 20px;
+  margin-top: 40px;
   min-height: 100px;
-  max-width: 1000px;
+  max-width: 800px;
+}
+
+.is-bold {
+  font-weight: bold;
 }
 </style>
 

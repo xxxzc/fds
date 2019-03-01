@@ -3,9 +3,6 @@
   <nav class="navbar is-fixed-top" :class="{'is-expanded': isExpand, 'is-collapse': !isExpand}" ref="navbar" role="navigation">
     <div class="container">
     <div class="navbar-brand">
-      <!-- <p class="navbar-item">
-        <img src="./assets/nju.jpg" width="112" height="28">
-      </p> -->
       <router-link id="brand-name" class="navbar-item" to="/">数据科学基础课程</router-link>
       <a class="navbar-item" href="https://github.com/xxxzc/fds" target="_blank">
         <b-icon icon="github-circle" size="is-medium" type="is-light"></b-icon>
@@ -48,6 +45,7 @@
   </div>
   <footer class="footer">
     <div class="content has-text-centered">
+      iselab.cn
     </div>
   </footer>
 </div>
@@ -62,10 +60,9 @@ export default {
     headerTitle: '',
     headerIcon: '',
     routerLinks: [
-      { name: '大纲', to: '/syllabus' },
+      { name: '课程信息', to: '/info' },
       { name: '课件', to: '/lectures' }, 
       { name: '作业', to: '/assignments'},
-      { name: '人员', to: '/people'},
       { name: '资源', to: '/resources'}]
   }),
   methods: {
@@ -133,7 +130,6 @@ $primary: #6A005F;
   &.is-expanded {
     padding-top: 20px;
     padding-bottom: 20px;
-    // background-color: $primary;
   }
 
   &.is-collapse {
