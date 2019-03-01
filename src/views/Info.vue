@@ -85,7 +85,7 @@ export default {
   }),
   mounted: function() {
     this.isLoading = true;
-    this.$http.get(this.repo + '/infos/courseinfo.json').then(res => {
+    this.$http.get(this.repo + '/infos/courseInfo.json').then(res => {
       this.infos = res.data;
       this.isLoading = false;
     });

@@ -80,20 +80,20 @@ export default {
 
 <style scoped>
 
-span.cls_003{font-size:54.1px;color:#01579b;font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_003{font-size:54.1px;color:#01579b;font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_004{font-size:54.1px;color:#01579b;font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_004{font-size:54.1px;color:#01579b;font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_005{font-size:54.0px;color:#01579b;font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_005{font-size:54.0px;color:#01579b;font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_002{font-size:20.1px;color:#01579b;font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_002{font-size:20.1px;color:#01579b;font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_007{font-size:20.1px;color:#01579b;font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_007{font-size:20.1px;color:#01579b;font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_010{font-size:48.1px;color:#01579b;font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_010{font-size:48.1px;color:#01579b;font-weight:bold;font-style:normal;text-decoration: none}
-span.cls_011{font-size:48.1px;color:#01579b;font-weight:normal;font-style:normal;text-decoration: none}
-div.cls_011{font-size:48.1px;color:#01579b;font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-size:54.1px;color:rgb(10,90,150);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-size:54.1px;color:rgb(10,90,150);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-size:54.1px;color:rgb(10,90,150);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_004{font-size:54.1px;color:rgb(10,90,150);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_005{font-size:54.0px;color:rgb(10,90,150);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-size:54.0px;color:rgb(10,90,150);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_002{font-size:20.1px;color:rgb(10,90,150);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-size:20.1px;color:rgb(10,90,150);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-size:20.1px;color:rgb(10,90,150);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_007{font-size:20.1px;color:rgb(10,90,150);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_010{font-size:48.1px;color:rgb(10,90,150);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_010{font-size:48.1px;color:rgb(10,90,150);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_011{font-size:48.1px;color:rgb(10,90,150);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-size:48.1px;color:rgb(10,90,150);font-weight:normal;font-style:normal;text-decoration: none}
 span.cls_012{font-size:28.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
 div.cls_012{font-size:28.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
 span.cls_013{font-size:28.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
@@ -132,8 +132,8 @@ span.cls_027{font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:nor
 div.cls_027{font-size:24.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
 span.cls_028{font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
 div.cls_028{font-size:18.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
-span.cls_029{font-family:"Microsoft YaHei Bold",serif;font-size:48.1px;color:#01579b;font-weight:bold;font-style:normal;text-decoration: none}
-div.cls_029{font-family:"Microsoft YaHei Bold",serif;font-size:48.1px;color:#01579b;font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_029{font-family:"Microsoft YaHei Bold",serif;font-size:48.1px;color:rgb(10,90,150);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_029{font-family:"Microsoft YaHei Bold",serif;font-size:48.1px;color:rgb(10,90,150);font-weight:bold;font-style:normal;text-decoration: none}
 span.cls_030{font-style:normal;text-decoration: none}
 div.cls_030{font-style:normal;text-decoration: none}
 span.cls_031{font-size:32.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
