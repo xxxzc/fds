@@ -12,11 +12,11 @@
       </div>
     </div>
   </div>
-<div class="is-clearfix">
-<div style="position:absolute;left:50%;margin-left:-480px;top:250px;width:960px;height:540px;overflow:hidden">
+<div class="is-clearfix container" style="max-width: 960px">
+<div style="position:absolute;top:20px;width:100%;">
 <div style="position:absolute;left:0px;top:0px">
-<img src="bg/background2.jpg" width=960 height=540></div>
-<div style="position:absolute;left:50px;top:47.45px" class="cls_010"><span class="cls_010">| Science (</span><span class="cls_011">科学</span><span class="cls_010">)</span></div>
+<img src="bg/background2.jpg"></div>
+<div style="position:absolute;left:50px;top:47.45px" class="cls_010"><span class="cls_010">Science (</span><span class="cls_011">科学</span><span class="cls_010">)</span></div>
 <div style="position:absolute;left:49.06px;top:160.22px" class="cls_012"><span class="cls_012">The  intellectual  and  practical  activity</span></div>
 <div style="position:absolute;left:49.06px;top:190.44px" class="cls_013"><span class="cls_013">encompassing the systematic study of the</span></div>
 <div style="position:absolute;left:49.06px;top:220.73px" class="cls_014"><span class="cls_014">structure</span><span class="cls_012"> and</span><span class="cls_014"> behaviour</span><span class="cls_012"> of the physical</span></div>
@@ -28,10 +28,10 @@
 <div style="position:absolute;left:444.46px;top:418.58px" class="cls_020"><span class="cls_020">行为</span></div>
 <div style="position:absolute;left:108.34px;top:429.29px" class="cls_018"><span class="cls_018">•</span><span class="cls_019"> 验证</span><span class="cls_013">(Verification)</span></div>
 </div>
-<div style="position:absolute;left:50%;margin-left:-480px;top:750px;width:960px;height:540px;overflow:hidden">
+<div style="position:absolute;top:520px;width:960px;height:540px;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
 <img src="bg/background3.jpg" width=960 height=540></div>
-<div style="position:absolute;left:50px;top:47.45px" class="cls_010"><span class="cls_010">| Data Science (</span><span class="cls_011">数据科学</span><span class="cls_010">)</span></div>
+<div style="position:absolute;left:50px;top:47.45px" class="cls_010"><span class="cls_010">Data Science (</span><span class="cls_011">数据科学</span><span class="cls_010">)</span></div>
 <div style="position:absolute;left:56.47px;top:190.44px" class="cls_021"><span class="cls_021">The intellectual and practical activity</span></div>
 <div style="position:absolute;left:56.47px;top:216.36px" class="cls_021"><span class="cls_021">encompassing the systematic study of</span></div>
 <div style="position:absolute;left:56.47px;top:242.30px" class="cls_021"><span class="cls_021">the structure and behaviour of </span><span class="cls_022">DATA</span></div>
@@ -40,10 +40,10 @@
 <div style="position:absolute;left:74.02px;top:382.70px" class="cls_026"><span class="cls_026">•</span><span class="cls_027"> </span><span class="cls_020">实验</span><span class="cls_021"> (Experiment on Data)</span></div>
 <div style="position:absolute;left:74.02px;top:418.58px" class="cls_026"><span class="cls_026">•</span><span class="cls_027"> </span><span class="cls_020">验证</span><span class="cls_021"> (Verification on Data)</span></div>
 </div>
-<div style="position:absolute;left:50%;margin-left:-480px;top:1250px;width:960px;height:540px;overflow:hidden">
+<div style="position:absolute;top:1020px;width:960px;height:540px;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
 <img src="bg/background4.jpg" width=960 height=540></div>
-<div style="position:absolute;left:50px;top:47.45px" class="cls_011"><span class="cls_011">| 跨学科内容</span></div>
+<div style="position:absolute;left:50px;top:47.45px" class="cls_011"><span class="cls_010">跨学科内容</span></div>
 <div style="position:absolute;left:550.97px;top:217.49px" class="cls_028"><span class="cls_028">计算机科学</span></div>
 <div style="position:absolute;left:671.11px;top:217.49px" class="cls_028"><span class="cls_028">数学与统计学</span></div>
 <div style="position:absolute;left:816.26px;top:217.49px" class="cls_028"><span class="cls_028">领域知识</span></div>
@@ -51,10 +51,10 @@
 <div style="position:absolute;left:483.19px;top:275.90px" class="cls_028"><span class="cls_028">实验</span></div>
 <div style="position:absolute;left:483.19px;top:305.11px" class="cls_028"><span class="cls_028">验证</span></div>
 </div>
-<div style="position:absolute;left:50%;margin-left:-480px;top:1750px;width:960px;height:540px;overflow:hidden">
+<div style="position:absolute;top:1520px;width:960px;height:540px;overflow:hidden">
 <div style="position:absolute;left:0px;top:0px">
 <img src="bg/background5.jpg" width=960 height=540></div>
-<div style="position:absolute;left:50px;top:47.45px" class="cls_011"><span class="cls_011">| 课程内容</span><span class="cls_029">：</span><span class="cls_011">理论部分</span></div>
+<div style="position:absolute;left:50px;top:47.45px" class="cls_011"><span class="cls_010">课程内容</span><span class="cls_029">：</span><span class="cls_010">理论部分</span></div>
 <div style="position:absolute;left:519.82px;top:150.17px" class="cls_030"><span class="cls_030">1.</span><span class="cls_031">数据科学导引</span></div>
 <div style="position:absolute;left:535.97px;top:228.00px" class="cls_032"><span class="cls_032">2.</span><span class="cls_033">概率论基础</span></div>
 <div style="position:absolute;left:497.14px;top:301.01px" class="cls_028"><span class="cls_028">矩</span></div>

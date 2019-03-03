@@ -3,7 +3,7 @@
   <slot name="header"></slot>
   <b-collapse class="container card">
     <div slot="trigger" slot-scope="props" class="card-header">
-      <p class="card-header-title">相关课程资源</p>
+      <p class="card-header-title">更多阅读</p>
       <a class="card-header-icon">
           <b-icon
               :icon="props.open ? 'menu-down' : 'menu-up'">

@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Foundations of Data Science",
+        "author": "Avrim Blum, John Hopcroft and Ravindran Kannan"
+    },
+    {
+        "name": "Data Science Thinking",
+        "author": "Longbin Cao"
+    },
+    {
+        "name": "《概率论与数理统计》",
+        "author": "盛骤、谢式千、潘承毅"
+    },
+    {
+        "name": "《数据挖掘:概念与技术》",
+        "author": "Jiawei Han, Micheling Kamber"   
+    },
+    {
+        "name": "《信息论基础》",
+        "author": "Thomas Cover, Joy Thomas"
+    },
+    {
+        "name": "《机器学习》",
+        "author": "周志华"
+    },
+    {
+        "name": "《概率论与数理统计》",
+        "author": "网易云课堂"
+    }
+]

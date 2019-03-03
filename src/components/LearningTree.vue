@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     refreshData() {
-      this.$http.get(this.repo + 'infos/python_learning_tree.json').then(res => {
+      this.$http.get('https://raw.githubusercontent.com/mooctest-code/public-problems/master/res/python_learning_tree.km').then(res => {
         this.learningtree = res.data;
         this.expandFirstThreeLevel(this.learningtree.root, 0);
         this.learningtree.root.children[0].children[0].data.expandState = 'expand';
@@ -64,6 +64,6 @@ export default {
 
 <style scoped>
 #minder-container {
-  height: 800px;
+  height: 500px;
 }
 </style>

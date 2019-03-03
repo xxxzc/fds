@@ -1,0 +1,105 @@
+course,Principles and Techniques of Data Science,UCB DS100,伯克利 DS100 2018秋季学期的课程主页,,http://www.ds100.org/fa18/
+course,Data Science in Practice,UCSD COGS108,UCSD COGS108 的课程主页,,https://github.com/COGS108/
+course,Practical Data Science,CMU PDS,CMU 实用数据科学 2018春季学期的课程主页,,http://www.datasciencecourse.org/
+course,The Foundations of Data Science,UCB DATA8,伯克利 Data8 的课程主页,,http://data8.org/
+course,Data Science I,Harvard CS109,Harvard CS109 数据科学课程主页,,https://github.com/cs109/
+course,Intro to Data Science,NYU DS-GA-1001,2018秋季学期,,https://github.com/briandalessandro/DataScienceCourse
+textbook,Computational and Inferential Thinking,UCB DATA8,伯克利 Data8 的教科书\n第1章 介绍数据科学\n第2章 介绍因果性和随机试验\n第3到9章 Python入门\n第10到14章 概率统计（概率基础、假设检验、抽样、参数估计和统计量）\n第15到18章 预测分析（相关性、回归和分类）,,https://www.inferentialthinking.com/chapters/intro
+textbook,Principles and Techniques of Data Science,UCB DS100,DS100的教科书\n第1章 介绍数据科学过程（以该课学生信息为例）\n第2到4章 设计数据\n第5到6章 数据探索性分析\n第7到9章 设计数据\n第10到11章 建模\n第12章 概率基础\n第13到17章 预测分析（回归、特征工程、模型优化、正则化和分类）\n第18章 统计推断,,https://www.textbook.ds100.org/
+textbook,Data Science for Business,NYU DS-GA-1001,NYU DS-GA-1001教科书(请自行寻找资源),,http://data-science-for-biz.com/DSB/Home.html
+lecture,intro.pdf,CMU PDS,need description,概念~过程~对比,http://www.datasciencecourse.org/notes/intro/intro.pdf
+note,intro,CMU PDS,need description,概念~过程~对比,http://www.datasciencecourse.org/notes/intro
+video,Lecture 1 Introduction,CMU PDS,need description,概念~过程~对比,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9fb318db-2179-4391-932c-a86b0147d2c3
+lecture,data_collection.pdf,CMU PDS,need description,API~爬虫~数据格式~文本处理,http://www.datasciencecourse.org/notes/data_collection/data_collection.pdf
+note,data_collection,CMU PDS,need description,API~爬虫~数据格式~文本处理,http://www.datasciencecourse.org/notes/data_collection
+video,Lecture 2 Data collection and scraping,CMU PDS,need description,API~爬虫~数据格式~文本处理,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=cf488bfb-1ee9-42dc-b52c-a87001492b89
+lecture,jupyter.pdf,CMU PDS,need description,Anaconda~Jupyter,http://www.datasciencecourse.org/notes/jupyter/jupyter.pdf
+note,jupyter.tar.gz,CMU PDS,need description,Anaconda~Jupyter,http://www.datasciencecourse.org/notes/jupyter/jupyter.tar.gz
+video,Lecture 3 Jupyter notebook lab,CMU PDS,need description,Anaconda~Jupyter,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=25f2f8cd-9e3f-43bd-993d-a8720148d766
+lecture,relational_data.pdf,CMU PDS,need description,关系数据~实体关系,http://www.datasciencecourse.org/notes/relational_data/relational_data.pdf
+note,relational_data,CMU PDS,need description,关系数据~实体关系,http://www.datasciencecourse.org/notes/relational_data
+video,Lecture 4 Relational data,CMU PDS,need description,关系数据~实体关系,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4909e4db-e1ac-4556-a14a-a87701490267
+lecture,visualization.pdf,CMU PDS,need description,数据可视化~常用图表~探索性分析,http://www.datasciencecourse.org/notes/visualization/visualization.pdf
+note,visualization,CMU PDS,need description,数据可视化~常用图表~探索性分析,http://www.datasciencecourse.org/notes/visualization
+video,Lecture 5 Visualization and data exploration,CMU PDS,need description,数据可视化~常用图表~探索性分析,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e99996af-3f74-44bb-ad84-a87901482fab
+lecture,free_text.pdf,CMU PDS,need description,词袋模型~TFIDF~词嵌入~语言模型,http://www.datasciencecourse.org/notes/free_text/free_text.pdf
+note,free_text,CMU PDS,need description,词袋模型~TFIDF~词嵌入~语言模型,http://www.datasciencecourse.org/notes/free_text
+video,Lecture 8 Free text and NLP,CMU PDS,need description,词袋模型~TFIDF~词嵌入~语言模型,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=9ff0beff-4a8e-4de7-8b90-a8850148a15a
+lecture,ml_intro.pdf,CMU PDS,need description,一元线性回归~梯度下降,http://www.datasciencecourse.org/notes/ml_intro/ml_intro.pdf
+note,ml_intro,CMU PDS,need description,一元线性回归~梯度下降,http://www.datasciencecourse.org/notes/ml_intro
+video,Lecture 10 Introduction to machine learing,CMU PDS,need description,一元线性回归~梯度下降,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=12615ab6-9b01-41a5-9a8d-a88c014940e3
+lecture,linear_classification.pdf,CMU PDS,need description,SVM~逻辑回归~多分类,http://www.datasciencecourse.org/notes/linear_classification/linear_classification.pdf
+note,linear_classification,CMU PDS,need description,SVM~逻辑回归~多分类,http://www.datasciencecourse.org/notes/linear_classification
+video,Lecture 12 Linear classification,CMU PDS,need description,SVM~逻辑回归~多分类,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8c9db180-92b5-48f5-92d4-a8930148e58c
+lecture,nonlinear_modeling.pdf,CMU PDS,need description,交叉验证~正则化~模型选择,http://www.datasciencecourse.org/notes/nonlinear_modeling/nonlinear_modeling.pdf
+note,nonlinear_modeling,CMU PDS,need description,交叉验证~正则化~模型选择,http://www.datasciencecourse.org/notes/nonlinear_modeling
+video,Lecture 13 Nonlinear modeling  cross-validation,CMU PDS,need description,交叉验证~正则化~模型选择,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6af0e6c2-4b6a-47e0-899c-a89501488441
+lecture,nonlinear_modeling.pdf,CMU PDS,need description,模型评估,http://www.datasciencecourse.org/notes/nonlinear_modeling/nonlinear_modeling.pdf
+note,nonlinear_modeling,CMU PDS,need description,模型评估,http://www.datasciencecourse.org/notes/nonlinear_modeling
+video,Lecture 14 evaluating ML models,CMU PDS,need description,模型评估,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6af0e6c2-4b6a-47e0-899c-a89501488441
+lecture,probability.pdf,CMU PDS,need description,概率定义~条件概率~随机变量~独立性~概率分布,http://www.datasciencecourse.org/notes/probability/probability.pdf
+note,probability,CMU PDS,need description,概率定义~条件概率~随机变量~独立性~概率分布,http://www.datasciencecourse.org/notes/probability
+video,Lecture 15 Basics of probability,CMU PDS,need description,概率定义~条件概率~随机变量~独立性~概率分布,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d87101f-085d-4880-8cdc-a8a80138a7f4
+lecture,mle.pdf,CMU PDS,need description,点估计~最大似然估计~朴素贝叶斯,http://www.datasciencecourse.org/notes/mle/mle.pdf
+note,mle,CMU PDS,need description,点估计~最大似然估计~朴素贝叶斯,http://www.datasciencecourse.org/notes/mle
+video,Lecture 16 Maxiumum likelihood estimation  naive Bayes,CMU PDS,need description,点估计~最大似然估计~朴素贝叶斯,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a2f8bcbe-636e-4a03-9ddc-a8aa01390794
+lecture,hypothesis_testing.pdf,CMU PDS,need description,抽样方法~中心极限定理~P值~t检验~A/B测试,http://www.datasciencecourse.org/notes/hypothesis_testing/hypothesis_testing.pdf
+video,Lecture 17 Hypothesis testing and experimental design,CMU PDS,need description,抽样方法~中心极限定理~P值~t检验~A/B测试,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2381c1ec-ba25-48e6-ac09-a8af01386c20
+lecture,data_scientists_ethics.pdf,CMU PDS,need description,隐私~道德~法律,http://www.datasciencecourse.org/notes/future/data_scientists_ethics.pdf
+video,Lecture 28 The future of data science,CMU PDS,need description,隐私~道德~法律,https://scs.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=fe78a4a5-883a-4b65-94e7-a8d401388dca
+lecture,w01-00-HelloWorld.pdf,UCSD COGS108,need description,概念~对比,https://github.com/COGS108/Lectures/blob/master/w01-00-HelloWorld.pdf
+lecture,w01-01-Introductions.pdf,UCSD COGS108,need description,技能,https://github.com/COGS108/Lectures/blob/master/w01-01-Introductions.pdf
+lecture,w02-02-Python.pdf,UCSD COGS108,need description,Jupyter,https://github.com/COGS108/Lectures/blob/master/w02-02-Python.pdf
+lecture,w02-03-Python:DataScience.pdf,UCSD COGS108,need description,数据格式~描述数据~关系数据,https://github.com/COGS108/Lectures/blob/master/w02-03-Python:DataScience.pdf
+lecture,w03-04-DataWrangling,UCSD COGS108,need description,API~爬虫,https://github.com/COGS108/Lectures/tree/master/w03-04-DataWrangling
+lecture,w04-06-DataVisualization.pdf,UCSD COGS108,need description,数据可视化~常用图表~探索性分析,https://github.com/COGS108/Lectures/blob/master/w04-06-DataVisualization.pdf
+lecture,w04-07-DataScienceEthics.pdf,UCSD COGS108,need description,隐私~道德~法律,https://github.com/COGS108/Lectures/blob/master/w04-07-DataScienceEthics.pdf
+lecture,w05-09-LinearModels.pdf,UCSD COGS108,need description,概率分布~t检验~一元线性回归,https://github.com/COGS108/Lectures/blob/master/w05-09-LinearModels.pdf
+ipynb,w06-11-CentralLimitTheorem.ipynb,UCSD COGS108,need description,抽样分布~中心极限定理,https://github.com/COGS108/Lectures/blob/master/w06-11-CentralLimitTheorem.ipynb
+ipynb,w06-12-Nonparametric.ipynb,UCSD COGS108,need description,t检验~KS检验,https://github.com/COGS108/Lectures/blob/master/w06-12-Nonparametric.ipynb
+lecture,w07-13-CentralLimit%2BText.pdf,UCSD COGS108,need description,TFIDF~词向量~词可视化,https://github.com/COGS108/Lectures/blob/master/w07-13-CentralLimit%2BText.pdf
+lecture,w07-15-IntroML.pdf,UCSD COGS108,need description,交叉验证~模型选择,https://github.com/COGS108/Lectures/blob/master/w07-15-IntroML.pdf
+lecture,Lecture0-Introduction,Harvard CS109,need description,概念~过程~对比,https://github.com/cs109/a-2017/tree/master/Lectures/Lecture0-Introduction
+lecture,Lecture1_EDA.pdf,Harvard CS109,need description,API~爬虫~数据类型~数据格式~数据缺失~变量定义~数据汇总~数据可视化,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture1-StatsAndEDA/Lecture1_EDA.pdf
+ipynb,Lecture1_Notebook.ipynb,Harvard CS109,need description,API~爬虫~数据类型~数据格式~数据缺失~变量定义~数据汇总~数据可视化,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture1-StatsAndEDA/Lecture1_Notebook.ipynb
+lecture,PandasAndScraping.pdf,Harvard CS109,need description,API~爬虫~关系数据,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture2-PandasAndScraping/PandasAndScraping.pdf
+ipynb,Lecture2-PandasAndScraping,Harvard CS109,need description,API~爬虫~关系数据,https://github.com/cs109/a-2017/tree/master/Lectures/Lecture2-PandasAndScraping
+lecture,Lecture12_kNN_Classification_and_Missingness_Module_2.pdf,Harvard CS109,need description,数据缺失,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture12_kNN_Classification_and_Missingness_Module_2.pdf
+lecture,EDA.pdf,Harvard CS109,need description,数据可视化~常用图表~探索性分析,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture3-EDAViz/EDA.pdf
+ipynb,Lecture3-EDAViz,Harvard CS109,need description,数据可视化~常用图表~探索性分析,https://github.com/cs109/a-2017/tree/master/Lectures/Lecture3-EDAViz
+lecture,Lecture4_Intro_Regression_Module1_L1.pdf,Harvard CS109,need description,kNN~一元线性回归,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture4-IntroRegression/Lecture4_Intro_Regression_Module1_L1.pdf
+ipynb,Lecture4_Notebook.ipynb,Harvard CS109,need description,kNN~一元线性回归,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture4-IntroRegression/Lecture4_Notebook.ipynb
+lecture,Lecture5_MultLinearRegression_Module1_L2.pdf,Harvard CS109,need description,多元线性回归~非线性回归~F检验~P值~卡方检验~模型评估,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture4-IntroRegression/Lecture5_MultLinearRegression_Module1_L2.pdf
+ipynb,Lecture5_Notebook.ipynb,Harvard CS109,need description,多元线性回归~非线性回归~F检验~P值~卡方检验~模型评估,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture4-IntroRegression/Lecture5_Notebook.ipynb
+lecture,Lecture6_ModelSelection_Module1_L3.pdf,Harvard CS109,need description,交叉验证~模型选择,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture6-ModelSelection/Lecture6_ModelSelection_Module1_L3.pdf
+ipynb,Lecture_6_Notebook.ipynb,Harvard CS109,need description,交叉验证~模型选择,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture6-ModelSelection/Lecture_6_Notebook.ipynb
+lecture,Lecture7_Regularization_Module1.pdf,Harvard CS109,need description,点估计~正则化,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture7-Regularization/Lecture7_Regularization_Module1.pdf
+ipynb,Lecture7_notebook.ipynb,Harvard CS109,need description,点估计~正则化,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture7-Regularization/Lecture7_notebook.ipynb
+lecture,VIZComm.pdf,Harvard CS109,need description,交流,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture9-Vizcomm/VIZComm.pdf
+lecture,Lecture10_Logistic_Regression_Module_2.pdf,Harvard CS109,need description,逻辑回归~贝叶斯分类器,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture10-LogReg/Lecture10_Logistic_Regression_Module_2.pdf
+ipynb,Lecture10-LogReg,Harvard CS109,need description,逻辑回归~贝叶斯分类器,https://github.com/cs109/a-2017/tree/master/Lectures/Lecture10-LogReg
+lecture,Lecture11_Logistic_Regression_2_Module_2.pdf,Harvard CS109,need description,逻辑回归~贝叶斯分类器~分类性能指标,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture11-LogReg_2/Lecture11_Logistic_Regression_2_Module_2.pdf
+lecture,Lecture20_ABTesting_Module3.pdf,Harvard CS109,need description,A/B测试~t检验~F检验~卡方检验~相关性~因果关系,https://github.com/cs109/a-2017/blob/master/Lectures/Lecture20/Lecture20_ABTesting_Module3.pdf
+ipynb,Lecture20,Harvard CS109,need description,A/B测试~t检验~F检验~卡方检验~相关性~因果关系,https://github.com/cs109/a-2017/tree/master/Lectures/Lecture20
+lecture,01-intro-to-data100_v2.pdf,UCB DS100,need description,概念~过程~技能,http://www.ds100.org/sp18/assets/lectures/lec01/01-intro-to-data100_v2.pdf
+ipynb,notebook.zip,UCB DS100,need description,概念~过程~技能,http://www.ds100.org/sp18/assets/lectures/lec01/notebook.zip
+lecture,02-data-generation-ds100.pdf,UCB DS100,need description,抽样方法,http://www.ds100.org/sp18/assets/lectures/lec02/02-data-generation-ds100.pdf
+note,02-prob-samples-notes.pdf,UCB DS100,need description,抽样方法,http://www.ds100.org/sp18/assets/lectures/lec02/02-prob-samples-notes.pdf
+lecture,05-EDA-and-Cleaning_v3.pdf,UCB DS100,need description,API~爬虫~数据格式~数据特性~数据格式~HTTP,http://www.ds100.org/sp18/assets/lectures/lec05/05-EDA-and-Cleaning_v3.pdf
+lecture,06-EDA-Continued.pdf,UCB DS100,need description,探索性分析~数据可视化~常用图表,http://www.ds100.org/sp18/assets/lectures/lec06/06-EDA-Continued.pdf
+lecture,08-visualization.pptx,UCB DS100,need description,变量定义~数据汇总~数据可视化,http://www.ds100.org/sp18/assets/lectures/lec08/08-visualization.pptx
+lecture,lec10.pdf,UCB DS100,need description,文本处理,http://www.ds100.org/sp18/assets/lectures/lec10/lec10.pdf
+ipynb,lec10.ipynb,UCB DS100,need description,文本处理,http://www.ds100.org/sp18/assets/lectures/lec10/lec10.ipynb
+lecture,11-finish-web-begin-sql_v2.pdf,UCB DS100,need description,关系数据~SQL,http://www.ds100.org/sp18/assets/lectures/lec11/11-finish-web-begin-sql_v2.pdf
+ipynb,sql_introduction_part1.html,UCB DS100,need description,关系数据~SQL,http://www.ds100.org/sp18/assets/lectures/lec11/sql_introduction_part1.html
+lecture,16-probability_V4.pdf,UCB DS100,need description,随机变量~独立性~概率分布~抽样方法~中心极限定理,http://www.ds100.org/sp18/assets/lectures/lec16/16-probability_V4.pdf
+lecture,16-probability_V4.pdf,UCB DS100,need description,一元线性回归~多元线性回归~词袋模型~语言模型,http://www.ds100.org/sp18/assets/lectures/lec16/16-probability_V4.pdf
+note,FeatureEngineeringPart1.html,UCB DS100,need description,一元线性回归~多元线性回归~词袋模型~语言模型,http://www.ds100.org/sp18/assets/lectures/lec19/code/FeatureEngineeringPart1.html
+lecture,20-cv_and_regularization_v3.pdf,UCB DS100,need description,交叉验证~正则化,http://www.ds100.org/sp18/assets/lectures/lec20/20-cv_and_regularization_v3.pdf
+ipynb,FeatureEngineeringPart2.html,UCB DS100,need description,交叉验证~正则化,http://www.ds100.org/sp18/assets/lectures/lec20/code/FeatureEngineeringPart2.html
+lecture,21-classification_v2.pdf,UCB DS100,need description,逻辑回归,http://www.ds100.org/sp18/assets/lectures/lec21/21-classification_v2.pdf
+lecture,24-hypothesis-testing.pptx,UCB DS100,need description,t检验~P值~相关性~因果关系,http://www.ds100.org/sp18/assets/lectures/lec24/24-hypothesis-testing.pptx
+ipynb,hypergeom.html,UCB DS100,need description,t检验~P值~相关性~因果关系,http://www.ds100.org/sp18/assets/lectures/lec24/hypergeom.html
+lecture,27-ethics-in-data-science.pdf,UCB DS100,need description,隐私~道德~法律,http://www.ds100.org/sp18/assets/lectures/lec27/27-ethics-in-data-science.pdf
+lecture,28-randomized-experiments-ab-testing.pdf,UCB DS100,need description,A/B测试,http://www.ds100.org/sp18/assets/lectures/lec28/28-randomized-experiments-ab-testing.pdf
+ipynb,sequential-experiments-demo.html,UCB DS100,need description,A/B测试,http://www.ds100.org/sp18/assets/lectures/lec28/sequential-experiments-demo.html

@@ -1,14 +1,16 @@
 <template>
 <section>
 <slot name="header"></slot>
-<div v-if="isLoading === false" class="container" style="min-height: 200px">
+<div class="container" style="min-height: 200px">
+  <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
   <!-- Course Infos -->
+  <div v-if="isLoading === false">
   <div class="is-title has-text-centered">
     <h3 class="title is-4"><i class="mdi mdi-information-outline mdi-24px" />
     <span style="margin-left: 6px">课程信息</span></h3>
   </div>
   <div class="columns is-mobile is-centered">
-  <table class="table is-bordered is-striped" style="width: 500px">
+  <table class="card table is-striped" style="width: 400px">
     <tbody>
       <tr v-for="info in infos.course" :key="info.key">
         <td class="is-bold">{{info.key}}</td>
@@ -23,7 +25,7 @@
     <span style="margin-left: 6px">考核方式</span></h3>
   </div>
   <div class="columns is-mobile is-centered">
-  <table class="table is-bordered is-striped" style="width: 800px">
+  <table class="table is-bordered is-striped">
     <tbody>
       <tr v-for="info in infos.evaluation" :key="info.key">
         <td class="is-bold">{{info.name}}</td>
@@ -44,7 +46,7 @@
   </h4>
   <div class="columns is-mobile is-multiline is-centered">
     <div class="column is-half-mobile is-half-tablet is-half-desktop is-one-third-widescreen is-one-third-fullhd"
-      style="max-width: 300px"
+      style="min-width: 300px"
       v-for="p in infos.team.instructor.people" :key="p.name">
       <div class="card"><div class="card-content">
         <div class="media"><div class="media-left">
@@ -64,13 +66,14 @@
   </h4>
   <div class="columns is-mobile is-multiline is-centered">
     <div class="column is-half-mobile is-half-tablet is-one-third-desktop is-one-quarter-widescreen is-one-quarter-fullhd"
-      style="max-width: 200px"
+      style="min-width: 220px"
       v-for="p in infos.team.tas.people" :key="p.name">
       <div class="card"><div class="card-content">
           <p class="title is-6">{{p.name}}</p>
           <p class="subtitle is-7"> {{p.email}}</p>
       </div>
       </div></div>
+  </div>
   </div>
 </div>
 </section>
@@ -85,7 +88,7 @@ export default {
   }),
   mounted: function() {
     this.isLoading = true;
-    this.$http.get(this.repo + 'infos/courseInfo.json').then(res => {
+    this.$http.get(this.repo + 'resource/info/courseInfo.json').then(res => {
       this.infos = res.data;
       this.isLoading = false;
     });
@@ -95,7 +98,6 @@ export default {
 
 <style scoped>
 .container {
-  /* margin-top: 20px; */
   max-width: 900px;
 }
 

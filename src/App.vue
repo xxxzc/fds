@@ -4,9 +4,11 @@
     <div class="container">
     <div class="navbar-brand">
       <router-link id="brand-name" class="navbar-item" to="/">数据科学基础课程</router-link>
-      <a class="navbar-item" href="https://github.com/xxxzc/fds" target="_blank">
-        <b-icon icon="github-circle" size="is-medium" type="is-light"></b-icon>
+      <div class="navbar-item">
+      <a class="button is-light is-small is-rounded" href="http://www.iselab.cn" target="_blank">
+        <img src="http://www.iselab.cn/static/imgs/logo.png">
       </a>
+      </div>
       <span
         class="navbar-burger burger"
         :class="{ 'is-active': isMenuActive }"
@@ -34,7 +36,6 @@
           <div class="hero-body">
             <div class="container">
               <h1 class="title">
-                <!-- {{headerTitle}} -->
                 <b-icon :icon="headerIcon"  custom-size="mdi-48px" type="is-light"></b-icon>
               </h1>
             </div>

@@ -5,17 +5,17 @@
     <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
     <b-table :data="lectureData" striped hoverable>
       <template slot-scope="props">
-        <b-table-column field="date" label="时间" centered>
+        <b-table-column field="date" label="时间" width="100">
           <p v-if="props.row.date !== '---'">
           {{props.row.date}}
           </p>
         </b-table-column>
-        <b-table-column field="topic" label="主题" centered>
+        <b-table-column field="topic" label="主题">
           <p :class="{'is-bold': props.row.date === '---'}">
           {{props.row.topic}}
           </p>
         </b-table-column>
-        <b-table-column field="slide" label="课件" centered>
+        <b-table-column field="slide" label="课件">
           <a v-for="slide in props.row.slides" :key="slide" :href="repo+slide" target="_blank">
             {{slide.slice(9)}}
           </a>
@@ -35,7 +35,7 @@ export default {
   }),
   created: function() {
     this.isLoading = true;
-    this.$http.get(this.repo + 'infos/lectures.json').then(res => {
+    this.$http.get(this.repo + 'resource/info/lectures.json').then(res => {
       this.lectureData = res.data;
       this.isLoading = false;
     });

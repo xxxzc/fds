@@ -2,7 +2,7 @@
 <div>
 <div class="content">
   <ul>
-    <li v-for="c in resources" :key="c.name"><strong>{{c.name}}</strong> {{c.author}}</li>
+    <li v-for="c in resources" :key="c.name+c.author"><strong>{{c.name}}</strong> {{c.author}}</li>
   </ul>
 </div>
 </div>
@@ -17,7 +17,7 @@ export default {
   }),
   created: function() {
     this.isLoading = true;
-    this.$http.get(this.repo + "infos/morecourse.json").then(res => {
+    this.$http.get(this.repo + "resource/info/morecourse.json").then(res => {
       this.resources = res.data;
     });
   }

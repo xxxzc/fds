@@ -10,11 +10,11 @@
         <b-table-column field="name" label="题目名">
           {{props.row[0]}}
         </b-table-column>
+        <b-table-column field="difficulty" label="难度" width="80" sortable :custom-sort="sortDifficulty">
+          {{props.row[1]}}
+        </b-table-column>
         <b-table-column field="description" label="简单描述" width="280">
           {{props.row[2]}}
-        </b-table-column>
-        <b-table-column field="difficulty" label="难度" sortable :custom-sort="sortDifficulty">
-          {{props.row[1]}}
         </b-table-column>
         <b-table-column field="key" label="知识点">
           <b-field grouped group-multiline>
@@ -72,7 +72,7 @@ export default {
   },
   methods: {
     refreshData() {
-      this.$http.get(this.repo + 'infos/ProblemInfo.csv').then(res => {
+      this.$http.get('https://raw.githubusercontent.com/mooctest-code/public-problems/master/res/probleminfo.csv').then(res => {
         this.problemSet = res.data.split('\n').slice(1).map(row => row.split(','));
       });
     },
