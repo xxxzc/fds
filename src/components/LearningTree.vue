@@ -65,5 +65,6 @@ export default {
 <style scoped>
 #minder-container {
   height: 500px;
+  background-color: #fff;
 }
 </style>

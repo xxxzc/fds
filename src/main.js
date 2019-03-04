@@ -9,7 +9,7 @@ import axios from 'axios'
 
 Vue.use(Buefy)
 Vue.prototype.$http = axios
-Vue.prototype.repo = "https://raw.githubusercontent.com/xxxzc/fds/master/"
+Vue.prototype.repo = "https://raw.githubusercontent.com/xxxzc/fds/master/resource/"
 Vue.config.productionTip = false
 
 new Vue({

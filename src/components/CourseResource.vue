@@ -17,7 +17,7 @@ export default {
   }),
   created: function() {
     this.isLoading = true;
-    this.$http.get(this.repo + "resource/info/morecourse.json").then(res => {
+    this.$http.get(this.repo + "info/morecourse.json").then(res => {
       this.resources = res.data;
     });
   }
