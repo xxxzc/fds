@@ -5,12 +5,12 @@
     <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
     <b-table :data="lectureData" striped hoverable>
       <template slot-scope="props">
-        <b-table-column field="date" label="时间" width="100">
+        <!-- <b-table-column field="date" label="时间" width="100">
           <p v-if="props.row.date !== '---'">
           {{props.row.date}}
           </p>
-        </b-table-column>
-        <b-table-column field="topic" label="主题">
+        </b-table-column> -->
+        <b-table-column field="topic" label="主题" width="400">
           <p :class="{'is-bold': props.row.date === '---'}">
           {{props.row.topic}}
           </p>

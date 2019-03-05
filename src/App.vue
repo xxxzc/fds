@@ -6,7 +6,7 @@
       <router-link id="brand-name" class="navbar-item" to="/">数据科学基础课程</router-link>
       <div class="navbar-item">
       <a class="button is-light is-small is-rounded" href="http://www.iselab.cn" target="_blank">
-        <img src="http://www.iselab.cn/static/imgs/logo.png">
+        <img :src="repo + 'imgs/logo.webp'">
       </a>
       </div>
       <span

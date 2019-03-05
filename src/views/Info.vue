@@ -51,7 +51,7 @@
       <div class="card"><div class="card-content">
         <div class="media"><div class="media-left">
           <figure class="image is-48x48">
-          <img class="is-rounded" :src="p.head">
+          <img class="is-rounded" :src="repo + p.head">
           </figure>
         </div>
         <div class="media-content">
@@ -88,8 +88,6 @@ export default {
   }),
   mounted: function() {
     this.isLoading = true;
-    // this.infos = require('../assets/info/course_info.json')
-    this.isLoading = false;
     this.$http.get(this.repo + 'info/courseInfo.json').then(res => {
       this.infos = res.data;
       this.isLoading = false;
