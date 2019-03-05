@@ -41,7 +41,6 @@ export default {
     this.isLoading = true;
     this.$http.get(this.repo + 'info/assignments.json').then(res => {
       this.assignmentData = res.data;
-      console.log(this.assignmentData);
       this.isLoading = false;
     });
   }
