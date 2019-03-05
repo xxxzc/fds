@@ -1,9 +1,11 @@
 <template>
 <div>
   <slot name="header"></slot>
-  <div id="assignment-table" class="container card">
+  <div id="assignment-table" class="container">
+    <div v-html="assignmentData.assignment"></div>
+    <div class="card" style="margin-top: 40px; min-height: 100px;">
     <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
-    <b-table :data="assignmentData" hoverable>
+    <b-table :data="assignmentData.assignment" hoverable>
       <template slot-scope="props">
         <b-table-column field="title" label="作业" width="200">
           <a :href="repo + props.row.link" target="_blank">
@@ -18,6 +20,7 @@
         </b-table-column>
       </template>
     </b-table>
+    </div>
   </div>
 </div>
 </template>
@@ -42,7 +45,6 @@ export default {
 <style scoped>
 #assignment-table {
   margin-top: 40px;
-  min-height: 100px;
   max-width: 1000px;
 }
 </style>

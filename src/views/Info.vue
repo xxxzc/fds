@@ -1,7 +1,7 @@
 <template>
 <section>
 <slot name="header"></slot>
-<div class="container" style="min-height: 200px">
+<div id="course-info" class="container">
   <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
   <!-- Course Infos -->
   <div v-if="isLoading === false">
@@ -13,7 +13,7 @@
   <table class="card table is-striped" style="width: 400px">
     <tbody>
       <tr v-for="info in infos.course" :key="info.key">
-        <td class="is-bold">{{info.key}}</td>
+        <td class="has-text-weight-bold">{{info.key}}</td>
         <td>{{info.value}}</td>
       </tr>
     </tbody>
@@ -28,7 +28,7 @@
   <table class="table is-bordered is-striped">
     <tbody>
       <tr v-for="info in infos.evaluation" :key="info.key">
-        <td class="is-bold">{{info.name}}</td>
+        <td class="has-text-weight-bold">{{info.name}}</td>
         <td>{{info.prop}}</td>
         <td>{{info.time}}</td>
         <td>{{info.desc}}</td>
@@ -51,7 +51,7 @@
       <div class="card"><div class="card-content">
         <div class="media"><div class="media-left">
           <figure class="image is-48x48">
-          <img class="is-rounded" :src="p.head" alt="Placeholder image">
+          <img class="is-rounded" :src="p.head">
           </figure>
         </div>
         <div class="media-content">
@@ -88,6 +88,8 @@ export default {
   }),
   mounted: function() {
     this.isLoading = true;
+    // this.infos = require('../assets/info/course_info.json')
+    this.isLoading = false;
     this.$http.get(this.repo + 'info/courseInfo.json').then(res => {
       this.infos = res.data;
       this.isLoading = false;
@@ -97,12 +99,9 @@ export default {
 </script>
 
 <style scoped>
-.container {
+#course-info {
+  min-height: 200px;
   max-width: 900px;
-}
-
-.is-bold {
-  font-weight: bold;
 }
 
 .is-title {

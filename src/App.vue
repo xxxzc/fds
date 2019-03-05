@@ -142,4 +142,8 @@ $primary: #6A005F;
   text-align: center;
 }
 
+.footer {
+  min-height: 100px;
+}
+
 </style>

@@ -57,7 +57,7 @@ export default {
 
 <style scoped>
 .card {
-  margin-top: 40px
+  margin-top: 30px
 }
 
 .card-header {

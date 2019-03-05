@@ -4,7 +4,6 @@ import router from './router'
 
 import Buefy from 'buefy'
 import './assets/scss/index.scss'
-import '@mdi/font/css/materialdesignicons.min.css'
 import axios from 'axios'
 
 Vue.use(Buefy)

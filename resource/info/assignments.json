@@ -1,3 +1,11 @@
-[
-    { "date": "2019-3-4 00:00", "title": "课件1.1后的开放问题", "link": "lectures/1.1 数据信息知识.pdf", "description": "使用word文件格式，命名要求为学号_姓名，添加到邮件附件，邮件主题为数据科学第一次课后作业+姓名，在3月4日00:00之前发送到liyu9691@qq.com，望周知。" }
-]
+{
+    "message": "<b-message type=\"is-info\"><p>请在这个学期内尽量完成 <a href=\"http://code.mooctest.net\" target=\"_blank\">code.mooctest.net</a> 习题集中的练习题（切勿 Copy！），我们会陆续增加新题目。</p><p>可以参考本站 <router-link to=\"/resources\" target=\"_blank\">资源</router-link> 中的 Python 学习路线图自主学习 Python 并完成上述练习。</p></b-message>",
+    "assignment": [
+        {
+            "date": "2019-3-4 00:00",
+            "title": "课件1.1后的开放问题",
+            "link": "lectures/1.1 数据信息知识.pdf",
+            "description": "使用word文件格式，命名要求为学号_姓名，添加到邮件附件，邮件主题为数据科学第一次课后作业+姓名，在3月4日00:00之前发送到liyu9691@qq.com，望周知。"
+        }
+    ]
+}
