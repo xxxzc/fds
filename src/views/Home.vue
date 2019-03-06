@@ -53,7 +53,7 @@
         <li>验证 (Verification on Data)</li>
       </ul></div>
       <div class="column">
-        <img src="../assets/images/datascience.webp"/>
+        <img src="../assets/images/datascience.png"/>
       </div>
     </div>
     </div>
@@ -66,7 +66,7 @@
       跨学科
     </h1>
     <div class="has-text-centered" style="margin-top: 50px; margin-bottom: 0px">
-    <img src="../assets/images/cross.webp" width="320px"/>
+    <img src="../assets/images/cross.png" width="320px"/>
     </div>
     </div>
     <div class="column">
@@ -74,7 +74,7 @@
       学习内容
     </h1>
     <div class="has-text-centered" style="margin-top: 50px; margin-bottom: 0px">
-    <img src="../assets/images/content.webp" width="320px"/>
+    <img src="../assets/images/content.png" width="320px"/>
     </div>
     </div>
     </div>
