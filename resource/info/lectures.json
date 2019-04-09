@@ -76,10 +76,6 @@
     "slides": []
 }, {
     "date": "",
-    "topic": "数据抽样",
-    "slides": ["lectures/4.1 数据抽样.pdf"]
-}, {
-    "date": "",
     "topic": "矩与几何性质",
     "slides": ["lectures/5.1 矩与几何性质.pdf"]
 }, {
@@ -97,7 +93,7 @@
 }, {
     "date": "---",
     "topic": "数据热力学",
-    "slides": ["lectures/5.1 矩与几何性质.pdf"]
+    "slides": []
 }, {
     "date": "",
     "topic": "数据热力学-熵",
