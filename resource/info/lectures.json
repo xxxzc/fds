@@ -70,4 +70,40 @@
     "date": "",
     "topic": "常用抽样分布",
     "slides": ["lectures/4.4 常用抽样分布.pdf"]
+}, {
+    "date": "---",
+    "topic": "数据几何学",
+    "slides": []
+}, {
+    "date": "",
+    "topic": "数据抽样",
+    "slides": ["lectures/4.1 数据抽样.pdf"]
+}, {
+    "date": "",
+    "topic": "矩与几何性质",
+    "slides": ["lectures/5.1 矩与几何性质.pdf"]
+}, {
+    "date": "",
+    "topic": "高维几何性质",
+    "slides": ["lectures/5.2 高维几何性质.pdf"]
+}, {
+    "date": "",
+    "topic": "多维概率分布",
+    "slides": ["lectures/5.3 多维概率分布.pdf"]
+},{
+    "date": "",
+    "topic": "数据可视化",
+    "slides": ["lectures/5.4 数据可视化.pdf"]
+}, {
+    "date": "---",
+    "topic": "数据热力学",
+    "slides": ["lectures/5.1 矩与几何性质.pdf"]
+}, {
+    "date": "",
+    "topic": "数据热力学-熵",
+    "slides": ["lectures/6.1 数据热力学-熵.pdf"]
+}, {
+    "date": "",
+    "topic": "信息熵计算",
+    "slides": ["lectures/6.2 信息熵计算.pdf"]
 }]
