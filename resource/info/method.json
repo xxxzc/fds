@@ -1,0 +1,13 @@
+[{
+    "date": "",
+    "topic": "统计基础",
+    "slides": ["lectures/001 课程介绍+统计基础.pdf"]
+}, {
+    "date": "",
+    "topic": "抽样和抽样分布",
+    "slides": ["lectures/002 抽样和抽样分布.pdf"]
+}, {
+    "date": "",
+    "topic": "数据可视化",
+    "slides": ["lectures/003 数据可视化.pdf"]
+}]

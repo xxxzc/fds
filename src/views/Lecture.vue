@@ -1,57 +1,38 @@
 <template>
-<div id="Lectures">
-  <slot name="header"></slot>
-  <div id="lecture-table" class="container card">
-    <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
-    <b-table :data="lectureData" striped hoverable>
-      <template slot-scope="props">
-        <!-- <b-table-column field="date" label="时间" width="100">
-          <p v-if="props.row.date !== '---'">
-          {{props.row.date}}
-          </p>
-        </b-table-column> -->
-        <b-table-column field="topic" label="主题" width="400">
-          <p :class="{'is-bold': props.row.date === '---'}">
-          {{props.row.topic}}
-          </p>
-        </b-table-column>
-        <b-table-column field="slide" label="课件">
-          <a v-for="slide in props.row.slides" :key="slide" :href="repo+slide" target="_blank">
-            {{slide.slice(9)}}
-          </a>
-        </b-table-column>
-      </template>
-    </b-table>
+  <div id="Lectures">
+    <slot name="header"></slot>
+    <LectureTable v-for="part in sources" :key="part.title" :title="part.title" :url="part.url"></LectureTable>
   </div>
-</div>
 </template>
 
 <script>
+import LectureTable from "@/components/LectureTable";
+
 export default {
-  name: 'lecture',
+  name: "lecture",
+  components: { LectureTable },
   data: () => ({
-    isLoading: true,
-    lectureData: []
+    sources: [
+      {
+        title: "数据科学理论",
+        url: "info/theroy.json"
+      },
+      {
+        title: "数据科学方法",
+        url: "info/method.json"
+      }
+    ]
   }),
   created: function() {
     this.isLoading = true;
-    this.$http.get(this.repo + 'info/lectures.json').then(res => {
+    this.$http.get(this.repo + "info/lectures.json").then(res => {
       this.lectureData = res.data;
       this.isLoading = false;
     });
   }
-}
+};
 </script>
 
 <style scoped>
-#lecture-table {
-  margin-top: 40px;
-  min-height: 100px;
-  max-width: 800px;
-}
-
-.is-bold {
-  font-weight: bold;
-}
 </style>
 
