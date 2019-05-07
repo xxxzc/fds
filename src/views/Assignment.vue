@@ -4,19 +4,15 @@
     <div id="assignment-table" class="container">
       <b-message type="is-info">
         <p>
-          请在这个学期内尽量完成
+          请在这个学期内尽量完成慕码&nbsp;
           <a href="http://code.mooctest.net" target="_blank">code.mooctest.net</a>
           &nbsp;
-          <strong>课程</strong>页中的练习题（切勿 Copy！），我们会陆续增加新题目。
-        </p>
-        <p>
-          可以参考本站&nbsp;
-          <router-link to="/resources">资源</router-link>&nbsp;中的 Python 学习路径自主学习 Python 并完成上述练习。
+          <strong>课程</strong>页中的题集，我们会陆续增加新题目。
         </p>
       </b-message>
       <div class="card" style="margin-top: 40px; min-height: 100px;">
         <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
-        <b-table :data="assignmentData.assignment" hoverable>
+        <b-table :data="assignmentData.assignment" striped hoverable>
           <template slot-scope="props">
             <b-table-column field="title" label="作业" width="200">
               <a :href="repo + props.row.link" target="_blank">{{props.row.title}}</a>

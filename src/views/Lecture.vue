@@ -1,7 +1,7 @@
 <template>
   <div id="Lectures">
     <slot name="header"></slot>
-    <LectureTable v-for="part in sources" :key="part.title" :title="part.title" :url="part.url"></LectureTable>
+    <LectureTable v-for="part in sources" :key="part.title" :part="part"></LectureTable>
   </div>
 </template>
 
@@ -22,14 +22,7 @@ export default {
         url: "info/method.json"
       }
     ]
-  }),
-  created: function() {
-    this.isLoading = true;
-    this.$http.get(this.repo + "info/lectures.json").then(res => {
-      this.lectureData = res.data;
-      this.isLoading = false;
-    });
-  }
+  })
 };
 </script>
 

@@ -1,55 +1,69 @@
 <template>
-<div id="app">
-  <nav class="navbar is-fixed-top" :class="{'is-expanded': isExpand, 'is-collapse': !isExpand}" ref="navbar" role="navigation">
-    <div class="container">
-    <div class="navbar-brand">
-      <router-link id="brand-name" class="navbar-item" to="/">数据科学基础课程</router-link>
-      <div class="navbar-item">
-      <a class="button is-light is-small is-rounded" href="http://www.iselab.cn" target="_blank">
-        <img src="./assets/images/logo.png">
-      </a>
-      </div>
-      <span
-        class="navbar-burger burger"
-        :class="{ 'is-active': isMenuActive }"
-        @click="isMenuActive = !isMenuActive">
-        <span/>
-        <span/>
-        <span/>
-      </span>
-    </div>
-    <div class="navbar-menu" @click="handleMenuClick" :class="{ 'is-active': isMenuActive }">
-      <div class="navbar-end">
-        <router-link class="navbar-item" v-for="router in routerLinks" 
-          :key="router.name" :to="router.to" 
-          :class="{ 'is-selected': router.to == $route.path }">
-            {{router.name}}
-        </router-link>
-      </div>
-    </div>
-    </div>
-  </nav>
-  <div class="is-overlay">
-    <keep-alive>
-      <router-view>
-        <section class="router-view-header hero is-primary" :class="{'is-mobile': isMobile}" slot="header">
-          <div class="hero-body">
-            <div class="container">
-              <h1 class="title">
-                <b-icon :icon="headerIcon"  custom-size="mdi-48px" type="is-light"></b-icon>
-              </h1>
-            </div>
+  <div id="app">
+    <nav
+      class="navbar is-fixed-top"
+      :class="{'is-expanded': isExpand, 'is-collapse': !isExpand}"
+      ref="navbar"
+      role="navigation"
+    >
+      <div class="container">
+        <div class="navbar-brand">
+          <router-link id="brand-name" class="navbar-item" to="/">数据科学基础课程</router-link>
+          <div class="navbar-item">
+            <a
+              class="button is-light is-small is-rounded"
+              href="http://www.iselab.cn"
+              target="_blank"
+            >
+              <img src="./assets/images/logo.png">
+            </a>
           </div>
-        </section>
-      </router-view>
-    </keep-alive>
-  </div>
-  <footer class="footer">
-    <div class="content has-text-centered">
-      iselab.cn
+          <span
+            class="navbar-burger burger"
+            :class="{ 'is-active': isMenuActive }"
+            @click="isMenuActive = !isMenuActive"
+          >
+            <span/>
+            <span/>
+            <span/>
+          </span>
+        </div>
+        <div class="navbar-menu" @click="handleMenuClick" :class="{ 'is-active': isMenuActive }">
+          <div class="navbar-end">
+            <router-link
+              class="navbar-item"
+              v-for="router in routerLinks"
+              :key="router.name"
+              :to="router.to"
+              :class="{ 'is-selected': router.to == $route.path }"
+            >{{router.name}}</router-link>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="is-overlay">
+      <keep-alive>
+        <router-view>
+          <section
+            class="router-view-header hero is-primary"
+            :class="{'is-mobile': isMobile}"
+            slot="header"
+          >
+            <div class="hero-body">
+              <div class="container">
+                <h1 class="title">
+                  <b-icon :icon="headerIcon" custom-size="mdi-48px" type="is-light"></b-icon>
+                </h1>
+              </div>
+            </div>
+          </section>
+        </router-view>
+      </keep-alive>
+      <footer class="footer">
+        <!-- <div class="content has-text-centered">iselab.cn</div> -->
+      </footer>
     </div>
-  </footer>
-</div>
+  </div>
 </template>
 
 <script>
@@ -58,19 +72,20 @@ export default {
     isMenuActive: false,
     isExpand: true,
     isMobile: false,
-    headerTitle: '',
-    headerIcon: '',
+    headerTitle: "",
+    headerIcon: "",
     routerLinks: [
-      { name: '课程信息', to: '/info' },
-      { name: '课件', to: '/lectures' }, 
-      { name: '作业', to: '/assignments'},
-      { name: '资源', to: '/resources'}]
+      { name: "课程信息", to: "/info" },
+      { name: "课件", to: "/lectures" },
+      { name: "作业", to: "/assignments" },
+      { name: "资源", to: "/resources" }
+    ]
   }),
   methods: {
-    handleScroll () {
+    handleScroll() {
       this.isExpand = !this.isMobile && window.scrollY < 60;
     },
-    handleMenuClick () {
+    handleMenuClick() {
       this.isMenuActive = false;
     }
   },
@@ -78,20 +93,20 @@ export default {
     $route: function() {
       this.headerTitle = this.$route.name;
       this.headerIcon = this.$route.meta.icon;
-    }  
+    }
   },
-  created () {
+  created() {
     this.isMobile = document.documentElement.clientWidth <= 768;
     this.isExpand = !this.isMobile;
     this.headerTitle = this.$route.name;
     this.headerIcon = this.$route.meta.icon;
-    window.addEventListener('scroll', this.handleScroll, true);
+    window.addEventListener("scroll", this.handleScroll, true);
   }
-}
+};
 </script>
 
 <style lang="scss">
-$primary: #6A005F;
+$primary: #6a005f;
 
 #app {
   font-family: Helvetica, Arial, sans-serif;
@@ -101,7 +116,7 @@ $primary: #6A005F;
 }
 
 #brand-name {
-  font-weight: bold
+  font-weight: bold;
 }
 
 .navbar-item {
@@ -120,7 +135,7 @@ $primary: #6A005F;
 }
 
 .icon-text {
-  vertical-align: middle
+  vertical-align: middle;
 }
 
 .navbar {
@@ -141,9 +156,4 @@ $primary: #6A005F;
 .router-view-header {
   text-align: center;
 }
-
-.footer {
-  min-height: 100px;
-}
-
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="lecture-table container">
     <div class="is-header is-title">
-      <h3 class="title is-4">{{title}}</h3>
+      <h3 class="title is-4">{{part.title}}</h3>
     </div>
     <div class="card">
       <b-loading :is-full-page="false" :active.sync="isLoading"></b-loading>
@@ -27,14 +27,14 @@
 <script>
 export default {
   name: "lecture-table",
-  props: ["title", "url"],
+  props: ["part"],
   data: () => ({
     isLoading: true,
     lectureData: []
   }),
   created: function() {
     this.isLoading = true;
-    this.$http.get(this.repo + this.url).then(res => {
+    this.$http.get(this.repo + this.part.url).then(res => {
       this.lectureData = res.data;
       this.isLoading = false;
     });
@@ -49,8 +49,8 @@ export default {
 }
 
 .is-header {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .is-bold {
