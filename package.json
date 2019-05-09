@@ -4,14 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --dest docs",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "deploy": "yarn build && cd fds && git add --all && git commit -m \"Deploy to gh-pages\" && git push origin gh-pages && cd .."
   },
   "dependencies": {
     "axios": "^0.18.0",
     "buefy": "^0.7.5",
-    "kity": "^2.0.4",
-    "kityminder-core": "^1.4.50",
     "vue": "^2.6.10",
     "vue-router": "^3.0.6"
   },
@@ -24,6 +23,7 @@
     "eslint-plugin-vue": "^5.2.2",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.6.10"
+    "vue-template-compiler": "^2.6.10",
+    "compression-webpack-plugin": "^2.0.0"
   }
 }

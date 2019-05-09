@@ -1,6 +1,6 @@
 <template>
   <section>
-    <b-field grouped>
+    <b-field v-if="filteredProblems.length > 0" grouped>
       <b-input v-model="filter" placeholder="搜索关键词" style="width: 300px"></b-input>
     </b-field>
     <b-table
@@ -48,19 +48,14 @@
         </b-table-column>
       </template>
     </b-table>
-    <div v-else class="subtitle is-5">Oops，当前分类下没有题目。</div>
+    <div v-else-if="problemSet.length > 0" class="subtitle is-5">Oops，当前分类下没有题目。</div>
   </section>
 </template>
 
 <script>
 export default {
   name: "ProblemTable",
-  props: {
-    tag: {
-      type: Array,
-      default: []
-    }
-  },
+  props: ["tag"],
   data: () => ({
     problemSet: [],
     filter: "",

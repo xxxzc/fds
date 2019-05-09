@@ -34,7 +34,6 @@
 </template>
 
 <script>
-import LearningTree from "@/components/LearningTree";
 import ProblemTable from "@/components/ProblemTable";
 import CourseResource from "@/components/CourseResource";
 import LearningMenu from "@/components/LearningMenu";
@@ -42,7 +41,6 @@ export default {
   name: "resources",
   components: {
     ProblemTable,
-    LearningTree,
     CourseResource,
     LearningMenu
   },

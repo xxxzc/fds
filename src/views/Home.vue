@@ -58,7 +58,7 @@
               </ul>
             </div>
             <div class="column">
-              <img src="../assets/images/datascience.png">
+              <img src="img/datascience.png">
             </div>
           </div>
         </div>
@@ -69,13 +69,13 @@
         <div class="column">
           <h1 class="title has-text-primary">跨学科</h1>
           <div class="has-text-centered" style="margin-top: 50px; margin-bottom: 0px">
-            <img src="../assets/images/cross.png" width="320px">
+            <img src="img/cross.png" width="320px">
           </div>
         </div>
         <div class="column">
           <h1 class="title has-text-primary">全过程</h1>
           <div class="has-text-centered" style="margin-top: 50px; margin-bottom: 0px">
-            <img src="../assets/images/content.png" width="320px">
+            <img src="img/content.png" width="320px">
           </div>
         </div>
       </div>

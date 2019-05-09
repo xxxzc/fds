@@ -15,7 +15,7 @@
               href="http://www.iselab.cn"
               target="_blank"
             >
-              <img src="./assets/images/logo.png">
+              <img src="img/logo.png">
             </a>
           </div>
           <span

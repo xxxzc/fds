@@ -1,19 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import Lecture from './views/Lecture.vue'
-import Info from './views/Info.vue'
-import Resources from './views/Resources.vue'
-import Assignment from './views/Assignment.vue'
 
 Vue.use(Router)
 
+function loadView(view) {
+  return () => import(`@/views/${view}.vue`)
+}
+
 export default new Router({
-  routes: [
-    {
+  routes: [{
       path: '/',
       name: 'Home',
-      component: Home,
+      component: loadView('Home'),
       meta: {
         icon: 'home'
       }
@@ -21,7 +19,7 @@ export default new Router({
     {
       path: '/lectures',
       name: 'Lectures',
-      component: Lecture,
+      component: loadView('Lecture'),
       meta: {
         icon: 'calendar-text'
       }
@@ -29,7 +27,7 @@ export default new Router({
     {
       path: '/info',
       name: 'info',
-      component: Info,
+      component: loadView('Info'),
       meta: {
         icon: 'bulletin-board'
       }
@@ -37,15 +35,15 @@ export default new Router({
     {
       path: '/resources',
       name: 'Resources',
-      component: Resources,
+      component: loadView('Resource'),
       meta: {
         icon: 'view-list'
-      }     
+      }
     },
     {
       path: '/assignments',
       name: 'Assignments',
-      component: Assignment,
+      component: loadView('Assignment'),
       meta: {
         icon: 'calendar-question'
       }
