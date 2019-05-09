@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "yarn build && cd fds && git add --all && git commit -m \"Deploy to gh-pages\" && git push origin gh-pages && cd .."
+    "deploy": "git subtree push --prefix fds origin gh-pages"
   },
   "dependencies": {
     "axios": "^0.18.0",
