@@ -108,7 +108,7 @@
     }]
 }, {
     "title": "数据科学方法",
-    "baseUrl": "http://www.iselab.cn/lectures/fds/",
+    "baseUrl": "http://219.219.120.72/pluginfile.php/24113/mod_folder/content/0/",
     "lectures": [{
         "date": "",
         "topic": "课程介绍和统计基础",
@@ -121,5 +121,17 @@
         "date": "",
         "topic": "数据可视化",
         "slides": ["003 数据可视化.pdf"]
+    }, {
+        "date": "",
+        "topic": "参数估计",
+        "slides": ["004 参数估计.pdf"]
+    }, {
+        "date": "",
+        "topic": "参数假设检验",
+        "slides": ["005 参数假设检验.pdf"]
+    }, {
+        "date": "",
+        "topic": "非参数假设检验",
+        "slides": ["006 非参数假设检验.pdf"]
     }]
 }]

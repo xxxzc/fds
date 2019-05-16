@@ -45,8 +45,11 @@ export default {
 
 <style scoped>
 .lecture-table {
-  min-height: 100px;
   max-width: 800px;
+}
+
+.card {
+  min-height: 100px;
 }
 
 .is-header {
