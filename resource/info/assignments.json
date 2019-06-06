@@ -27,6 +27,12 @@
             "title": "Python 常用内置模块",
             "link": "http://code.mooctest.net/#/course",
             "description": "Python 中常用的内置模块。如数值相关的 math、statistics 和 random；高级数据结构 datetime 和 collections 等。"
+        },
+        {
+            "date": "2019-7-1 00:00",
+            "title": "数据汇总",
+            "link": "http://code.mooctest.net/#/exercise/single?examId=3097",
+            "description": "Numpy 的基本使用和常用的数据汇总度量。"
         }
     ]
 }
