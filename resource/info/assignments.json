@@ -33,6 +33,12 @@
             "title": "数据汇总",
             "link": "http://code.mooctest.net/#/exercise/single?examId=3097",
             "description": "Numpy 的基本使用和常用的数据汇总度量。"
+        },
+        {
+            "date": "2019-7-8 00:00",
+            "title": "概率论基础",
+            "link": "http://code.mooctest.net/#/exercise/single?examId=3098",
+            "description": "概率基础题，包括概率论的一些基础知识，如定义和计算，条件概率，乘法公式，全概率公式，贝叶斯公式以及独立性。"
         }
     ]
 }
