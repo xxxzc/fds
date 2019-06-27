@@ -133,5 +133,17 @@
         "date": "",
         "topic": "非参数假设检验",
         "slides": ["006 非参数假设检验.pdf"]
+    }, {
+        "date": "",
+        "topic": "方差分析",
+        "slides": ["007 方差分析A.pdf", "008 方差分析B.pdf"]
+    }, {
+        "date": "",
+        "topic": "自然语言处理",
+        "slides": ["009 自然语言处理AB.pdf"]
+    }, {
+        "date": "",
+        "topic": "复习",
+        "slides": ["复习.pdf"]
     }]
 }]

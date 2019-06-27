@@ -1,6 +1,6 @@
 [{
     "date": "",
-    "topic": "统计基础",
+    "topic": "课程介绍和统计基础",
     "slides": ["lectures/001 课程介绍+统计基础.pdf"]
 }, {
     "date": "",
@@ -10,4 +10,28 @@
     "date": "",
     "topic": "数据可视化",
     "slides": ["lectures/003 数据可视化.pdf"]
+}, {
+    "date": "",
+    "topic": "参数估计",
+    "slides": ["lectures/004 参数估计.pdf"]
+}, {
+    "date": "",
+    "topic": "参数假设检验",
+    "slides": ["lectures/005 参数假设检验.pdf"]
+}, {
+    "date": "",
+    "topic": "非参数假设检验",
+    "slides": ["lectures/006 非参数假设检验.pdf"]
+}, {
+    "date": "",
+    "topic": "方差分析",
+    "slides": ["lectures/007 方差分析A.pdf", "008 方差分析B.pdf"]
+}, {
+    "date": "",
+    "topic": "自然语言处理",
+    "slides": ["lectures/009 自然语言处理AB.pdf"]
+}, {
+    "date": "",
+    "topic": "复习",
+    "slides": ["lectures/复习.pdf"]
 }]

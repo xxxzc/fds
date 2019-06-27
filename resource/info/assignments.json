@@ -1,59 +1,59 @@
 {
     "assignment": [{
-            "date": "2019-7-8 00:00",
+            "date": "2019-3-4 00:00",
             "title": "课件1.1后的开放问题",
             "link": "http://www.iselab.cn/lectures/fds/1.1 数据信息知识.pdf",
             "description": "使用word文件格式，命名要求为学号_姓名，添加到邮件附件，邮件主题为数据科学第一次课后作业+姓名，在3月4日00:00之前发送到liyu9691@qq.com，望周知。"
         }, {
-            "date": "2019-7-8 00:00",
-            "title": "Python 基础语法",
+            "date": "2019-7-7 23:59",
+            "title": "课程-Python 基础语法",
             "link": "http://code.mooctest.net/#/course",
             "description": "Python 的基础语法题，包括输入输出、数值运算（整数、浮点数和逻辑运算）、流程控制（条件、循环等）以及函数。"
         },
         {
-            "date": "2019-7-8 00:00",
-            "title": "Python 数据结构",
+            "date": "2019-7-7 23:59",
+            "title": "课程-Python 数据结构",
             "link": "http://code.mooctest.net/#/course",
             "description": "Python 内置数据结构（字符串、列表、元祖、集合和字典）的使用。"
         },
         {
-            "date": "2019-7-8 00:00",
-            "title": "Python 内置全局函数",
+            "date": "2019-7-7 23:59",
+            "title": "课程-Python 内置全局函数",
             "link": "http://code.mooctest.net/#/course",
             "description": "Python 常用的内置全局函数。比如用于在字符串和数值间转换的 chr()、ord() 等；应用在可迭代对象上的 map()、any() 等以及应用于类和对象上的相关方法函数。"
         },
         {
-            "date": "2019-7-8 00:00",
-            "title": "Python 常用内置模块",
+            "date": "2019-7-7 23:59",
+            "title": "课程-Python 常用内置模块",
             "link": "http://code.mooctest.net/#/course",
             "description": "Python 中常用的内置模块。如数值相关的 math、statistics 和 random；高级数据结构 datetime 和 collections 等。"
         },
         {
-            "date": "2019-7-8 00:00",
+            "date": "2019-7-7 23:59",
             "title": "习题集-数据汇总",
             "link": "http://code.mooctest.net/#/exercise/single?examId=3097",
             "description": "Numpy 的基本使用和常用的数据汇总度量。"
         },
         {
-            "date": "2019-7-8 00:00",
+            "date": "2019-7-7 23:59",
             "title": "习题集-概率论基础",
             "link": "http://code.mooctest.net/#/exercise/single?examId=3098",
             "description": "概率基础题，包括概率论的一些基础知识，如定义和计算，条件概率，乘法公式，全概率公式，贝叶斯公式以及独立性。"
         },
         {
-            "date": "2019-7-8 00:00",
+            "date": "2019-7-7 23:59",
             "title": "习题集-概率分布",
             "link": "http://code.mooctest.net/#/exercise/single?examId=3120",
             "description": "随机变量和一维离散、连续概率分布题。建议使用定义、scipy.stats 和手算解决。"
         },
         {
-            "date": "2019-7-8 00:00",
+            "date": "2019-7-7 23:59",
             "title": "习题集-数据几何学",
             "link": "http://code.mooctest.net/#/exercise/single?examId=3154",
             "description": "二维随机变量和高维数据相关的度量的计算。"
         },
         {
-            "date": "2019-7-8 00:00",
+            "date": "2019-7-7 23:59",
             "title": "习题集-数据热力学",
             "link": "http://code.mooctest.net/#/exercise/single?examId=3165",
             "description": "sklearn.datasets 和 pandas 的基本使用以及信息熵等熵在数据上的应用。"
